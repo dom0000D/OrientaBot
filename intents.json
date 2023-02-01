@@ -1,6 +1,6 @@
 {"intents": [
 	{"tag": "saluti",
-	 "patterns": ["ciao", "hey", "buongiorno", "ciao bot", "hey come va?", "ciao ho bisogno di aiuto"],
+	 "patterns": ["ciao","salve", "hey", "buongiorno", "ciao bot", "hey come va?", "ciao ho bisogno di aiuto"],
 	 "responses": ["Ciao!", "Hey!", "Buongiorno, come posso aiutarti?", "Ciao, dimmi tutto!", "Hey, hai qualcosa da chiedermi?"]},
 
 	 {"tag": "arrivederci",
