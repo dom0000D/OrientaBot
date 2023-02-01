@@ -11,7 +11,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 with open('intents.json', 'r') as json_data:
     intents = json.load(json_data)
 
-FILE = "data.pth"
+FILE = "training.pth"
 data = torch.load(FILE)
 
 input_size = data["input_size"]
@@ -25,11 +25,11 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
-bot_name = "Sam"
-print("Let's chat! (type 'quit' to exit)")
+bot_name = "OrientaBot"
+print("Ciao! Sono OrientaBot, cosa vuoi sapere? (scrivi 'quit' per uscire)")
 while True:
     # sentence = "do you use credit cards?"
-    sentence = input("You: ")
+    sentence = input("Tu: ")
     if sentence == "quit":
         break
 
@@ -50,4 +50,4 @@ while True:
             if tag == intent["tag"]:
                 print(f"{bot_name}: {random.choice(intent['responses'])}")
     else:
-        print(f"{bot_name}: I do not understand...")
+        print(f"{bot_name}: Scusami, non credo di aver capito...")
