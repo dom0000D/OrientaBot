@@ -1,0 +1,37 @@
+{"intents": [
+	{"tag": "saluti",
+	 "patterns": ["ciao", "hey", "buongiorno", "ciao bot", "hey come va?", "ciao ho bisogno di aiuto"],
+	 "responses": ["Ciao!", "Hey!", "Buongiorno, come posso aiutarti?", "Ciao, dimmi tutto!", "Hey, hai qualcosa da chiedermi?"]},
+
+	 {"tag": "arrivederci",
+	 "patterns": ["grazie per l'aiuto!", "Ci vediamo", "Tutto chiaro, grazie", "Ci si vede", "grazie mille, alla prossima", "Arrivederci bot"],
+	 "responses": ["Felice di averti aiutato!", "Arrivederci, a presto!", "Ci vediamo presto", "Alla prossima", "Sono sempre qui per te"]},
+
+	 {"tag": "nome",
+	 "patterns": ["come ti chiami?", "qual é il tuo nome?", "chi sei?", "puoi dirmi il tuo nome?", "hai un nome?", "non ricordo il tuo nome"],
+	 "responses": ["Sono botty", "Puoi chiamarmi botty!", "Sono Botty, la tua guida per universitá", "Sono Botty, il tuo novo assistente!"]},
+
+	  {"tag": "zona",
+	 "patterns": ["dove si trova la sede?", "dove si trova l'universitá?", "in che zona é l'universitá?", "dove sta l'uni?", "dove é situata l'universitá?"],
+	 "responses": ["L'universitá si trova a Napoli, nel Centro Direzionale, Isola C4", "La Parthenope si trova al Centro Direzionale, Isola C4!", "Al Centro Direzionale, Isola C4"]},
+
+	   {"tag": "esami",
+	 "patterns": ["Quanti esami ci sono?", "numero degli esami", "quanti esami dovró sostenere?", "quanti CFU sono?"],
+	 "responses": ["Il CDS di Informatica ha 20 esami con 180 CFU", "Ci sono 20 esami con 180 CFU, in bocca al lupo!", "Dovrai sostenere 20 esami, collezionando 180 CFU!"]},
+
+	 {"tag": "preferito",
+	 "patterns": ["qual é il tuo esame preferito?", "che esame ti piace", "qual é la tua materia preferita?"],
+	 "responses": ["Il mio esame preferito é... TUTTI", "Il mio esame preferito é Sistemi Operativi!", "Sono un robot, secondote?", "Il mio esame preferito é Algoritmi e Strutture Dati!"]},
+
+	 {"tag": "segreteria",
+	 "patterns": ["A che ora apre la segreteria?", "la segreteria é aperta?", "quali sono gli orari della segreteria?", "a che ora posso andare in segreteria?"],
+	 "responses": ["La segreteria é aperta tutti i giorni dalle 09.00 alle 11.00", "La segreteria é aperta ogni giorno dalle 09.00 alle 11.00", "Puoi andare in segreteria tutti i giorni dalle 09.00 alle 11.00"]},
+
+	 {"tag": "apertura",
+	 "patterns": ["Quando é aperta l'universitá?", "in che giorni posso andare in sede?", "quali sono i giorni per andare in universitá?"],
+	 "responses": ["L'universitá é aperta dal lunedí al venerdí, dalle 08.00 fino alle 19.30.", "Dal lunedí al venerdí, dalle 08.00 fino alle 19.30.", "Puoi andare in sede dal lunedí al venerdí, dalle 08.00 fino alle 19.30."]},
+
+	 {"tag": "Orario",
+	 "patterns": ["dove posso leggere gli orari delle lezioni?", "orario lezioni", "a che ora ci sono le lezioni?", "tra quanto ho la prossima lezione?"],
+	 "responses": ["La prossima lezione é tra 10 minuti!", "Puoi consultare il sito della scuola", "Oggi non ci sono lezioni", "La prossima lezione é alle ore 11.00"]}
+]}
