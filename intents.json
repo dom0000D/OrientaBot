@@ -1,6 +1,6 @@
 {"intents": [
 	{"tag": "saluti",
-	 "patterns": ["ciao","salve", "hey", "buongiorno", "ciao bot", "hey come va?", "ciao ho bisogno di aiuto"],
+	 "patterns": ["ciao", "hey", "buongiorno", "ciao bot", "hey come va?", "ciao ho bisogno di aiuto"],
 	 "responses": ["Ciao!", "Hey!", "Buongiorno, come posso aiutarti?", "Ciao, dimmi tutto!", "Hey, hai qualcosa da chiedermi?"]},
 
 	 {"tag": "arrivederci",
@@ -30,6 +30,15 @@
 	 {"tag": "apertura",
 	 "patterns": ["Quando é aperta l'universitá?", "in che giorni posso andare in sede?", "quali sono i giorni per andare in universitá?"],
 	 "responses": ["L'universitá é aperta dal lunedí al venerdí, dalle 08.00 fino alle 19.30.", "Dal lunedí al venerdí, dalle 08.00 fino alle 19.30.", "Puoi andare in sede dal lunedí al venerdí, dalle 08.00 fino alle 19.30."]},
+
+	 {"tag": "trasporto",
+	 "patterns": ["Come arrivo al centro direzionale?", "Qual è la strada per andare al centro direzionale?", "Posso arrivare al centro direzionale col treno?"],
+	 "responses": ["Puoi arrivare al centro Direzionale in diversi modi molto comodi: se abiti a Napoli puoi prendere la Metropolitana e fermarti a Garibaldi, dopo 5 minuti di passeggiata sarai arrivato al CDR. Se provieni dai paesi vesuviani o limitrofi puoi usufruire del servizio offerto dall'EAV: basta scendere alla fermata Centro Direzionale e il gioco é fatto!", "Puoi prendere la Metro e scendere a Garibaldi oppure utilizzare il servizio ferroviario EAV e scendere all fermata Centro direzionale."]},
+
+	 {"tag": "rettore",
+	 "patterns": ["Come si chiama il rettore?", "Qual è il nome del rettore?", "Chi é il rettore dell'universitá?"],
+	 "responses": ["Il nome del Magnifico Rettore é il Prof. Alberto Carotenuto.", "Il Rettore dell'Universitá Parthenope é il Professore Alberto Carotenuto, eletto per il sessennio 2022 - 2028."]},
+
 
 	 {"tag": "Orario",
 	 "patterns": ["dove posso leggere gli orari delle lezioni?", "orario lezioni", "a che ora ci sono le lezioni?", "tra quanto ho la prossima lezione?"],
