@@ -32,7 +32,7 @@
 	 "responses": ["L'universitá é aperta dal lunedí al venerdí, dalle 08.00 fino alle 19.30.", "Dal lunedí al venerdí, dalle 08.00 fino alle 19.30.", "Puoi andare in sede dal lunedí al venerdí, dalle 08.00 fino alle 19.30."]},
 
 	 {"tag": "trasporto",
-	 "patterns": ["Come arrivo al centro direzionale?","Come arrivo al cdr?","Come arrivo in sede?", "Qual è la strada per andare al centro direzionale?", "Posso arrivare al centro direzionale col treno?"],
+	 "patterns": ["Come arrivo al centro direzionale?","Come arrivo al cdr?","cdr","centro direzionale","come arrivare al centro direzionale","Come arrivo in sede?", "Qual è la strada per andare al centro direzionale?", "Posso arrivare al centro direzionale col treno?"],
 	 "responses": ["Puoi arrivare al centro Direzionale in diversi modi molto comodi: se abiti a Napoli puoi prendere la Metropolitana e fermarti a Garibaldi, dopo 5 minuti di passeggiata sarai arrivato al CDR. Se provieni dai paesi vesuviani o limitrofi puoi usufruire del servizio offerto dall'EAV: basta scendere alla fermata Centro Direzionale e il gioco é fatto!", "Puoi prendere la Metro e scendere a Garibaldi oppure utilizzare il servizio ferroviario EAV e scendere all fermata Centro direzionale."]},
 
 	 {"tag": "rettore",
