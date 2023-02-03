@@ -1,3 +1,4 @@
+import os
 import random
 import json
 import torch
@@ -23,6 +24,8 @@ model_state = data["model_state"]
 model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
+
+
 
 bot_name = "OrientaBot"
 print("Ciao! Sono OrientaBot, cosa vuoi sapere? (scrivi 'exit' per uscire)")
