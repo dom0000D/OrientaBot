@@ -7,17 +7,21 @@
 	 "patterns": ["grazie per l'aiuto!", "Ci vediamo", "Tutto chiaro, grazie", "Ci si vede", "grazie mille, alla prossima", "Arrivederci bot"],
 	 "responses": ["Felice di averti aiutato!", "Arrivederci, a presto!", "Ci vediamo presto", "Alla prossima", "Sono sempre qui per te"]},
 
+	 {"tag": "curiositá",
+	 "patterns": ["Dammi qualche info sulla Parthenope", "Mi dici qualche dato sull'universitá?", "Voglio sapere qualche news sull'universitá", "Posso avere qualche news sull'Ateneo?"],
+	 "responses": ["Sempre più studenti scelgono la Parthenope: è quanto registrano i dati diffusi dal Ministero dell’Università e della Ricerca nell’ambito dell’indagine sull’andamento delle Università in Italia.", "Il nostro ateneo é impegnato nella campagna Antartide 2023.", "Il CDS di Informatica é considerato uno dei migliori del Sud Italia.", "Sapevi che puoi lavorare per la tua Universitá? Ogni anno vengono emessi dei bandi per collaborazioni studentesche retribuite.", "L'universitá Parthenope é l'unica Universitá Italiana ad avere un accordo di Cooperazione Scientifica e Tecnologica per l'istituzione di un programma accademico su iOS Development.","Il nostro Ateneo é primo del Centro Sud per qualitá della Ricerca e tra i primi dieci in tutta Italia.","La Parthenope é plastic free! Troverai in ogni ateneo un distributore d'acqua, naturale e frizzante, completamente gratuito per la tua borraccia."]},
+
 	 {"tag": "nome",
 	 "patterns": ["come ti chiami?", "qual é il tuo nome?", "chi sei?", "puoi dirmi il tuo nome?", "hai un nome?", "non ricordo il tuo nome"],
 	 "responses": ["Sono OrientaBot", "Puoi chiamarmi OrientaBot!", "Sono OrientaBot, la tua guida per universitá", "Sono OrientaBot, il tuo nuovo assistente!"]},
 
-	  {"tag": "zona",
-	 "patterns": ["dove si trova la sede?", "dove si trova l'universitá?", "in che zona é l'universitá?", "dove sta l'uni?", "dove é situata l'universitá?"],
-	 "responses": ["L'universitá si trova a Napoli, nel Centro Direzionale, Isola C4", "La Parthenope si trova al Centro Direzionale, Isola C4!", "Al Centro Direzionale, Isola C4"]},
+	 {"tag": "sedi",
+	 "patterns": ["dove si trovano le sedi?", "dove si trova l'universitá?", "in che zona é l'universitá?", "dove sta l'uni?", "dove é situata l'universitá?","quante sedi ha l'universitá?","quanti sedi ci sono?","quali sono le sedi dell'ateneo?"],
+	 "responses": ["Ci sono diverse sedi in tutta Napoli e provincia: \n1. La sede centrale dell’Università degli Studi di Napoli “Parthenope” è collocata in Via Ammiraglio Ferdinando Acton n. 38.\n2. Il Palazzo Pacanowski è situato a Napoli, in Via Generale Parisi n. 13, nelle adiacenze della Scuola Militare Nunziatella. Compone dei Dipartimenti di Giurisprudenza, Studi Aziendali ed Economici, Studi Aziendali e Quantitativi, Studi Economici e Giuridici.\n3. La sede al Centro Direzionale, che ospita il Dipartimento di Ingegneria e del Dipartimento di Scienze e Tecnologie.\n4. Villa Doria d’Angri, una delle più importanti ville neoclassiche italiane situata a Posillipo, qui potrai seguire il corso Apple Foundation.\n5. In Via Medina, dove ha sede il Dipartimento di Scienze Motorie e del Benessere.\n6. La sede di Nola, ospita tre corsi di laurea triennale in “Economia & Management”, “Ingegneria e Scienze Informatiche per la Cybersecurity” e “Scienze Motorie” e un corso di laurea magistrale a ciclo unico in “Giurisprudenza”."]},
 
-	   {"tag": "esami",
-	 "patterns": ["Quanti esami ci sono?", "numero degli esami", "quanti esami dovró sostenere?", "quanti CFU sono?"],
-	 "responses": ["Il CDS di Informatica ha 20 esami con 180 CFU", "Ci sono 20 esami con 180 CFU, in bocca al lupo!", "Dovrai sostenere 20 esami, collezionando 180 CFU!"]},
+	 {"tag": "esami",
+	 "patterns": ["Quanti esami ci sono a informatica?", "numero degli esami a informatica", "quanti esami dovró sostenere a informatica?", "quanti esami ha informatica?","Mi dici il numero degli esami di informatica?"],
+	 "responses": ["Il CDS di Informatica ha 20 esami, consulta il sito per maggior informazioni.", "Ci sono 20 esami, in bocca al lupo! Se vuoi avere maggior informazioni puoi consultare il nostro sito.", "Dovrai sostenere 20 esami! Puoi trovare il piano di studi sul nostro sito.","Al corso di studi di Informatica ci sono 20 esami. Visita la pagina del corso di studi per avere tutte le info","Ci sono 20 esami al corso di Informatica, consulta il sito della Scuola per maggiori informazioni.","Informatica ha 20 esami, puoi trovare il piano di studi sul sito dell'Ateneo."]},
 
 	 {"tag": "preferito",
 	 "patterns": ["qual é il tuo esame preferito?", "che esame ti piace", "qual é la tua materia preferita?"],
@@ -39,8 +43,23 @@
 	 "patterns": ["Come si chiama il rettore?", "Qual è il nome del rettore?", "Chi é il rettore dell'universitá?"],
 	 "responses": ["Il nome del Magnifico Rettore é il Prof. Alberto Carotenuto.", "Il Rettore dell'Universitá Parthenope é il Professore Alberto Carotenuto, eletto per il sessennio 2022 - 2028."]},
 
+	 {"tag": "servizi",
+	 "patterns": ["Mi elenchi i servizi dell’ateneo?","che servizi ci sono", "Che servizi offre l’univeristá?", "Cosa offre l'Universitá?","Di che servizi posso usufruire?"],
+	 "responses": ["L'universitá offre molti servizi: puoi trovare una biblioteca dove studiare e reperire libri, aulee studio e tanto altro. Vieni a farci visita, OrientaBot ti aspetta!", "L'Ateneo offre molti servizi: c'é una biblioteca dove studiare, aulee studio capienti e silenziose, gadget personalizzati e tanto altro. Vieni a farci visita, OrientaBot ti aspetta!","Biblioteca, sale informatiche, distributore d'acqua, bar e tanto altro. Vieni in sede a farci visita, OrientaBot ti aspetta :)"]},
 
-	 {"tag": "Orario",
-	 "patterns": ["dove posso leggere gli orari delle lezioni?", "orario lezioni", "a che ora ci sono le lezioni?", "tra quanto ho la prossima lezione?"],
-	 "responses": ["La prossima lezione é tra 10 minuti!", "Puoi consultare il sito della scuola", "Oggi non ci sono lezioni", "La prossima lezione é alle ore 11.00"]}
+	 {"tag": "zonaStudio",
+	 "patterns": ["Posso studiare in sede?", "C'é una biblioteca dove studiare?", "Posso studiare in universitá?","Ci sono aulee studio?","biblioteca e aulee studio"],
+	 "responses": ["Puoi studiare in sede tutti i giorni feriali, ci sono molti spazi dedicati allo studio su ogni piano dell'edificio oppure puoi recarti in biblioteca.", "Puoi studiare in biblioteca, in aula studio o in uno dei banchi che si trovano sui piani dell'edificio!"]},
+
+	 {"tag": "portineria",
+	 "patterns": ["Ho dimenticato il mio ombrello in aula, come posso ritrovarlo?","Ho perso lo zaino in sede","Ho smarrito il tablet in aula","Ho lasciato il mio quaderno in aula come posso ritrovarlo?", "Ho perso il mio cellulare, come posso ritrovarlo?","Esiste un centro di oggetti smarriti?"],
+	 "responses": ["Mi dispiace per il tuo oggetto! Prova ad andare in portineria, c'é il centro di oggetti smarriti."]},
+
+	 {"tag": "tasse",
+	 "patterns": ["Quante tasse devo pagare?", "Quante tasse dovró pagare?", "Come faccio a sapere quante tasse devo pagare?","tasse simulatore","voglio simulare quante tasse dovró pagare"],
+	 "responses": ["L'universitá Parthenope é sempre dal lato degli studenti: esiste una no tax area se il tuo ISEE é inferiore a 28.000 euro. \nSe cosí non fosse puoi accedere al simulatore tasse per vedere quante tasse dovrai pagare. Inoltre avrai dei benefit se nel corso dei tuoi studi riuscirai a maturare un numero di CFU stabilito."]},
+
+	 {"tag": "orarioLezioni",
+	 "patterns": ["dove posso leggere gli orari delle lezioni?", "orario lezioni", "a che ora ci sono le lezioni?", "a che ora iniziano le lezioni?"],
+	 "responses": ["Puoi controllare gli orari delle lezioni sul nostro sito, se invece ti trovi in sede troverai i nostri monitor nei corridoi con tutte gli orari delle lezioni.", "Puoi consultare il sito della scuola, troverai gli orari di tutti i corsi di studi.", "Se sei in universitá puoi contollare sui monitor nei corridoi oppure recati sul sito della scuola."]}
 ]}
