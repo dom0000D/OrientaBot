@@ -1,40 +1,30 @@
 from tkinter import *
 #from chat import bot_name
-"""""
+
 # Create object
-splash = Tk()
-splash.title("OrientaBot")
+splashScreen = Tk()
+splashScreen.title("OrientaBot")
 # Adjust size
-splash.geometry("600x600")
-splash.eval('tk::PlaceWindow . center')
+splashScreen.configure(width=500, height=550)
+splashScreen.eval('tk::PlaceWindow . center') #center splash screen
 
 # Set Label
-img = PhotoImage(file= "../../Desktop/TESI/Icona bianca.png")
-splash_label = Label(splash, font=18, image=img)
+logo = PhotoImage(file="../../Desktop/TESI/Icona bianca.png") #load logo
+splash_label = Label(splashScreen, font=18, image=logo)
+splashScreen.resizable(width=False, height=False)
+
 splash_label.pack()
 
-
 # main window function
-
-
 def main():
-    # destroy splash window
-    splash.destroy()
-
-    # Execute tkinter
-    root = Tk()
-
-    # Adjust size
-    root.geometry("400x400")
-
-
-# Set Interval
-splash.after(4000, main)
-
+    # destroy splashScreen window
+    splashScreen.destroy()
+# Time of splash screen
+splashScreen.after(2500, main)
 # Execute tkinter
 mainloop()
-"""""
-BG_COLOR = "#17202A"
+
+BG_COLOR = "#063970" #color background
 class ChatApplication:
 
     def __init__(self):
