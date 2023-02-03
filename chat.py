@@ -1,6 +1,5 @@
 import random
 import json
-
 import torch
 
 from model import NeuralNet
@@ -28,7 +27,7 @@ model.eval()
 bot_name = "OrientaBot"
 print("Ciao! Sono OrientaBot, cosa vuoi sapere? (scrivi 'exit' per uscire)")
 while True:
-    # sentence = "do you use credit cards?"
+    # sentence = "come mi iscrivo?"
     sentence = input("Tu: ")
     if sentence == "exit":
         break
