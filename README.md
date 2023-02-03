@@ -3,6 +3,7 @@ Utilizzo di Python, nltk, NLP, Pytorch.
 Progetto di tesi di laurea triennale in informatica.
 
 <p align="center">
-  <img width="460" height="300" src="![Icona bianca](https://user-images.githubusercontent.com/56475652/216560233-91be0c83-f846-4f4a-9942-5a64db200291.png)">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/56475652/216560660-46bcba6c-e0dc-46b0-80ea-0e148f1b7aa3.png">
 </p>
+
 
