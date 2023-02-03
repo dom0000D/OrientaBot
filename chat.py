@@ -26,11 +26,11 @@ model.load_state_dict(model_state)
 model.eval()
 
 bot_name = "OrientaBot"
-print("Ciao! Sono OrientaBot, cosa vuoi sapere? (scrivi 'quit' per uscire)")
+print("Ciao! Sono OrientaBot, cosa vuoi sapere? (scrivi 'exit' per uscire)")
 while True:
     # sentence = "do you use credit cards?"
     sentence = input("Tu: ")
-    if sentence == "quit":
+    if sentence == "exit":
         break
 
     sentence = tokenize(sentence)

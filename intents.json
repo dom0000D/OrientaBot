@@ -43,9 +43,25 @@
 	 "patterns": ["Come si chiama il rettore?", "Qual è il nome del rettore?", "Chi é il rettore dell'universitá?"],
 	 "responses": ["Il nome del Magnifico Rettore é il Prof. Alberto Carotenuto.", "Il Rettore dell'Universitá Parthenope é il Professore Alberto Carotenuto, eletto per il sessennio 2022 - 2028."]},
 
+	{"tag": "immatricolazione",
+	 "patterns": ["Come faccio ad immatricolarmi?","come immatricolarsi", "come faccio l'iscrizione?", "come mi iscrivo all'universitá?","come iscriversi","come iscriversi all'universitá","come mi immatricolo","come mi iscrivo","qual é la procedura per iscriversi"],
+	 "responses": ["Stai per iscriverti per la prima volta all'Università? \nEcco tutti i passaggi che dovrai fare per immatricolarti. Accedi al tuo profilo esse3.\n 1. Compilazione della domanda di immatricolazione\n 2. Seleziona il tipo di immatricolazione [standard, part time, studente rinunciatario...]\n 3. Seleziona il Corso di Studi. \n 4. Inserisci il tuo ISEE Universitario. \n 5. Effettua l'upload di tutti i tuoi documenti. \n 6.Inserire l'anno accademico e controlla che i dati sono corretti. \n 7. Pagamento delle tasse di iscrizione. \n Se hai bisogno di aiuto puoi recarti in sede e chiedere alla segreteria per tutte le informazioni che desideri."]},
+
 	 {"tag": "servizi",
 	 "patterns": ["Mi elenchi i servizi dell’ateneo?","che servizi ci sono", "Che servizi offre l’univeristá?", "Cosa offre l'Universitá?","Di che servizi posso usufruire?"],
 	 "responses": ["L'universitá offre molti servizi: puoi trovare una biblioteca dove studiare e reperire libri, aulee studio e tanto altro. Vieni a farci visita, OrientaBot ti aspetta!", "L'Ateneo offre molti servizi: c'é una biblioteca dove studiare, aulee studio capienti e silenziose, gadget personalizzati e tanto altro. Vieni a farci visita, OrientaBot ti aspetta!","Biblioteca, sale informatiche, distributore d'acqua, bar e tanto altro. Vieni in sede a farci visita, OrientaBot ti aspetta :)"]},
+
+	 {"tag": "uso",
+	 "patterns": ["A cosa servi?","cosa posso chiederti", "A che servi?", "Cosa mi puoi dire?","In cosa mi puoi aiutare?","cosa sai fare","che sai fare","che ti posso chiedere","cosa ti posso chidere"],
+	 "responses": ["Sono stato creato per poter aiutare gli studenti che cercano informazioni riguardo l'Ateneo, tasse, segreteria, lezioni, immatricolazioni e tanto altro. Prova a chiedermi qualcosa e cercheró di esserti utile!"]},
+
+	 {"tag": "tesi",
+	 "patterns": ["Come richiedere la tesi","Come faccio a richiedere la tesi?", "richiesta tesi", "a chi devo chiedere per la tesi?","come si chiede la tesi?"],
+	 "responses": ["Per richiedere la tesi devi andare dal Professore che hai scelto e vedere la sua disponibilitá. Dopo accedi al tuo profilo esse3 e alla voce 'Laurea' avrai tutte le istruzioni. In bocca al lupo!"]},
+
+	 {"tag": "tirocinio",
+	 "patterns": ["Come inizio il tirocinio?","hai info sul tirocinio?", "aiuto tirocinio", "Come si inizia il tirocinio?","A chi devo chiedere per il tirocinio?"],
+	 "responses": ["Per iniziare il tirocinio dovrai aver completato gli esami obbligatori, ad esempio se sei uno studente di Informatica dovrai aver completato Algoritmi e Strutture Dati, Sistemi Operativi, Programmazione III, Basi di Dati. Recati dal responsabile dei tirocini cercandolo sul sito e inviagli una mail di richiesta. Il responsabile per Informatica é il Prof. Antonio Maratea. Buon lavoro!"]},
 
 	 {"tag": "zonaStudio",
 	 "patterns": ["Posso studiare in sede?", "C'é una biblioteca dove studiare?", "Posso studiare in universitá?","Ci sono aulee studio?","biblioteca e aulee studio"],
