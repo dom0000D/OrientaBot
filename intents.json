@@ -31,6 +31,10 @@
 	 "patterns": ["A che ora apre la segreteria?", "la segreteria é aperta?", "quali sono gli orari della segreteria?", "a che ora posso andare in segreteria?"],
 	 "responses": ["La segreteria é aperta tutti i giorni dalle 09.00 alle 11.00", "La segreteria é aperta ogni giorno dalle 09.00 alle 11.00", "Puoi andare in segreteria tutti i giorni dalle 09.00 alle 11.00"]},
 
+	 {"tag": "sito",
+	 "patterns": ["Qual é il sito della scuola?", "Qual é il sito dell'ateneo?", "Qual é il sito?", "Qual é il sito dell'universitá?","Qual é il sito della Parthenope?"],
+	 "responses": ["Il sito dell'Universitá é https://www.uniparthenope.it. \nQui puoi trovare tutto ció che cerchi."]},
+
 	 {"tag": "apertura",
 	 "patterns": ["Quando é aperta l'universitá?", "in che giorni posso andare in sede?", "quali sono i giorni per andare in universitá?"],
 	 "responses": ["L'universitá é aperta dal lunedí al venerdí, dalle 08.00 fino alle 19.30.", "Dal lunedí al venerdí, dalle 08.00 fino alle 19.30.", "Puoi andare in sede dal lunedí al venerdí, dalle 08.00 fino alle 19.30."]},
@@ -42,6 +46,10 @@
 	 {"tag": "rettore",
 	 "patterns": ["Come si chiama il rettore?", "Qual è il nome del rettore?", "Chi é il rettore dell'universitá?"],
 	 "responses": ["Il nome del Magnifico Rettore é il Prof. Alberto Carotenuto.", "Il Rettore dell'Universitá Parthenope é il Professore Alberto Carotenuto, eletto per il sessennio 2022 - 2028."]},
+
+	 {"tag": "cds",
+	 "patterns": ["Che corsi ci sono?", "che corsi di studi ci sono?", "quali sono i corsi di studio?", "quali sono i corsi?", "quali sono le facoltá?", "che facoltá ci sono?"],
+	 "responses": ["L'univesitá Parthenope offre una vasta gamma di corsi di studi: \nInformatica \nConduzione del Mezzo Navale\nEconomia Aziendale\nEconomia e Commercio\nEconomia e Management – Sede di Nola\nGiurisprudenza (magistrale a ciclo unico)\nGiurisprudenza (magistrale a ciclo unico) – Sede di Nola\nIngegneria Civile e Ambientale per la Mitigazione dei Rischi\nIngegneria e Scienze Informatiche per la Cybersecurity – Sede di Nola\nIngegneria Gestionale\nIngegneria Informatica, Biomedica e delle Telecomunicazioni\nManagement delle Imprese Internazionali\nManagement delle Imprese Turistiche\nScienze Biologiche\nScienze dell’Amministrazione, dell’Organizzazione e Consulenza del Lavoro\nStatistica e Informatica per l’Azienda, la Finanza e le Assicurazioni\nScienze Nautiche, Aeronautiche e Meteo-oceanografiche\nScienze Motorie\nScienze Motorie – Sede di Nola"]},
 
 	{"tag": "immatricolazione",
 	 "patterns": ["Come faccio ad immatricolarmi?","come immatricolarsi", "come faccio l'iscrizione?", "come mi iscrivo all'universitá?","come iscriversi","come iscriversi all'universitá","come mi immatricolo","come mi iscrivo","qual é la procedura per iscriversi"],

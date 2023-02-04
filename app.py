@@ -76,9 +76,8 @@ class ChatApplication:
         self.msg_entry.bind("<Return>",self._on_enter_press)
 
         #send button
-        send_button = Button(bottom_label, text="INVIO", font=FONT_BOLD, width=20,bg=BG_GRAY, command= lambda: self._on_enter_press(None))
+        send_button = Button(bottom_label, text="INVIO", font=FONT_BOLD, width=20, command=lambda: self._on_enter_press(None))
         send_button.place(relx=0.77, rely=0.008, relheight=0.06, relwidth=0.22)
-
 
     def _on_enter_press(self,event):
         msg = self.msg_entry.get()
