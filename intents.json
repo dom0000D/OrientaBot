@@ -1,6 +1,6 @@
 {"intents": [
 	{"tag": "saluti",
-	 "patterns": ["ciao", "hey", "buongiorno", "ciao bot", "hey come va?", "ciao ho bisogno di aiuto"],
+	 "patterns": ["ciao", "hey", "buongiorno", "ciao bot", "hey come va?", "ciao ho bisogno di aiuto","mi serve aiuto","ciao, puoi aiutarmi?"],
 	 "responses": ["Ciao!", "Hey!", "Buongiorno, come posso aiutarti?", "Ciao, dimmi tutto!", "Hey, hai qualcosa da chiedermi?"]},
 
 	 {"tag": "arrivederci",
@@ -16,7 +16,7 @@
 	 "responses": ["Sono OrientaBot", "Puoi chiamarmi OrientaBot!", "Sono OrientaBot, la tua guida per universitá", "Sono OrientaBot, il tuo nuovo assistente!"]},
 
 	 {"tag": "sedi",
-	 "patterns": ["dove si trovano le sedi?", "dove si trova l'universitá?", "in che zona é l'universitá?", "dove sta l'uni?", "dove é situata l'universitá?","quante sedi ha l'universitá?","quanti sedi ci sono?","quali sono le sedi dell'ateneo?"],
+	 "patterns": ["dove si trovano le sedi?", "dove si trova l'universitá?", "in che zona é l'universitá?", "dove sta l'uni?", "dove é situata l'universitá?","quante sedi ha l'universitá?","quanti sedi ci sono?","quali sono le sedi dell'ateneo?", "dove si trova la Parthenope?", "quali sono le sedi della Parthenope"],
 	 "responses": ["Ci sono diverse sedi in tutta Napoli e provincia: \n1. La sede centrale dell’Università degli Studi di Napoli “Parthenope” è collocata in Via Ammiraglio Ferdinando Acton n. 38.\n2. Il Palazzo Pacanowski è situato a Napoli, in Via Generale Parisi n. 13, nelle adiacenze della Scuola Militare Nunziatella. Compone dei Dipartimenti di Giurisprudenza,\n Studi Aziendali ed Economici, Studi Aziendali e Quantitativi, Studi Economici e Giuridici.\n3. La sede al Centro Direzionale, che ospita il Dipartimento di Ingegneria e del Dipartimento di Scienze e Tecnologie.\n4. Villa Doria d’Angri, una delle più importanti ville neoclassiche italiane situata a Posillipo, qui potrai seguire il corso Apple Foundation.\n5. In Via Medina, dove ha sede il Dipartimento di Scienze Motorie e del Benessere.\n6. La sede di Nola, ospita tre corsi di laurea triennale in “Economia & Management”, “Ingegneria e Scienze Informatiche per la Cybersecurity” e “Scienze Motorie” \n e un corso di laurea magistrale a ciclo unico in “Giurisprudenza”."]},
 
 	 {"tag": "esami",
@@ -36,11 +36,11 @@
 	 "responses": ["Il sito dell'Universitá é https://www.uniparthenope.it. \nQui puoi trovare tutto ció che cerchi."]},
 
 	 {"tag": "apertura",
-	 "patterns": ["Quando é aperta l'universitá?", "in che giorni posso andare in sede?", "quali sono i giorni per andare in universitá?"],
+	 "patterns": ["Quando é aperta l'universitá?", "in che giorni posso andare in sede?", "quali sono i giorni per andare in universitá?","Quando é aperta la Parthenpope?"],
 	 "responses": ["L'universitá é aperta dal lunedí al venerdí, dalle 08.00 fino alle 19.30.", "Dal lunedí al venerdí, dalle 08.00 fino alle 19.30.", "Puoi andare in sede dal lunedí al venerdí, dalle 08.00 fino alle 19.30."]},
 
 	 {"tag": "trasporto",
-	 "patterns": ["Come arrivo al centro direzionale?","Come arrivo al cdr?","cdr","centro direzionale","come arrivare al centro direzionale","Come arrivo in sede?", "Qual è la strada per andare al centro direzionale?", "Posso arrivare al centro direzionale col treno?"],
+	 "patterns": ["Come arrivo al centro direzionale?","Come arrivo al cdr?","cdr","centro direzionale","come arrivare al centro direzionale","Come arrivo in sede?", "Qual è la strada per andare al centro direzionale?", "Posso arrivare al centro direzionale col treno?","Come arrivo alla Parthenope?"],
 	 "responses": ["Puoi arrivare al centro Direzionale in diversi modi molto comodi: se abiti a Napoli puoi prendere la Metropolitana e fermarti a Garibaldi,\n dopo 5 minuti di passeggiata sarai arrivato al CDR. \nSe provieni dai paesi vesuviani o limitrofi puoi usufruire del servizio offerto dall'EAV: basta scendere alla fermata Centro Direzionale e il gioco é fatto!", "Puoi prendere la Metro e scendere a Garibaldi oppure utilizzare il servizio ferroviario EAV e scendere all fermata Centro direzionale."]},
 
 	 {"tag": "rettore",
@@ -48,7 +48,7 @@
 	 "responses": ["Il nome del Magnifico Rettore é il Prof. Alberto Carotenuto.", "Il Rettore dell'Universitá Parthenope é il Professore Alberto Carotenuto, eletto per il sessennio 2022 - 2028."]},
 
 	 {"tag": "cds",
-	 "patterns": ["Che corsi ci sono?", "che corsi di studi ci sono?", "quali sono i corsi di studio?", "quali sono i corsi?", "quali sono le facoltá?", "che facoltá ci sono?"],
+	 "patterns": ["Che corsi ci sono?","cosa si studia alla Parthenope?", "che corsi di studi ci sono?", "quali sono i corsi di studio?", "quali sono i corsi?", "quali sono le facoltá?", "che facoltá ci sono?"],
 	 "responses": ["L'univesitá Parthenope offre una vasta gamma di corsi di studi: \nInformatica \nConduzione del Mezzo Navale\nEconomia Aziendale\nEconomia e Commercio\nEconomia e Management – Sede di Nola\nGiurisprudenza (magistrale a ciclo unico)\nGiurisprudenza (magistrale a ciclo unico) – Sede di Nola\nIngegneria Civile e Ambientale per la Mitigazione dei Rischi\nIngegneria e Scienze Informatiche per la Cybersecurity – Sede di Nola\nIngegneria Gestionale\nIngegneria Informatica, Biomedica e delle Telecomunicazioni\nManagement delle Imprese Internazionali\nManagement delle Imprese Turistiche\nScienze Biologiche\nScienze dell’Amministrazione, dell’Organizzazione e Consulenza del Lavoro\nStatistica e Informatica per l’Azienda, la Finanza e le Assicurazioni\nScienze Nautiche, Aeronautiche e Meteo-oceanografiche\nScienze Motorie\nScienze Motorie – Sede di Nola"]},
 
 	{"tag": "immatricolazione",
@@ -62,6 +62,14 @@
 	 {"tag": "uso",
 	 "patterns": ["A cosa servi?","cosa posso chiederti", "A che servi?", "Cosa mi puoi dire?","In cosa mi puoi aiutare?","cosa sai fare","che sai fare","che ti posso chiedere","cosa ti posso chidere"],
 	 "responses": ["Sono stato creato per poter aiutare gli studenti che cercano informazioni riguardo l'Ateneo, tasse, segreteria, lezioni, immatricolazioni e tanto altro. \nProva a chiedermi qualcosa e cercheró di esserti utile!"]},
+
+	 {"tag": "sportello",
+	 "patterns": ["C'é uno sportello psicologico?","Vorrei un supporto psicologico", "Come accedo allo sportello psicologico?", "C'é il servizio di supporto psicologico?"],
+	 "responses": ["L’Università degli Studi di Napoli “Parthenope” mette a disposizione di tutti gli studenti che vivono situazioni di disagio psicologico,\nche si ripercuotono anche nella propria attività di studio, di ricerca o di lavoro, un supporto gratuito che prevede brevi cicli di incontri\nin presenza o da remoto tramite Skype, a seconda della scelta della persona e sempre nel massimo rispetto della privacy.\n Per accedere al Servizio è sufficiente inviare una mail a antonia.cunti@uniparthenope.it con la richiesta di un appuntamento."]},
+
+	 {"tag": "smartCard",
+	 "patterns": ["come richiedere la smart card?","come si fa la smart card?","come faccio la carta adisurc?","come faccio la scheda adisurc?", "come fare la card della mensa?", "come si fa la smart card della mensa?","come faccio a richiedere la smart card?","come si fa la smart card adisurc?","come faccio a richiedere la smart card?"],
+	 "responses": ["Tutti gli studenti possono richiedere la Smart Card Adisurc per la mensa universitaria. \n1.Clicca su www.adisurccampania.it \n2.Seleziona la tua Universitá e accedi con credenziali SPID o CIE \n3.Seleziona anno e smart card prima emissione \n4.Stampa il modulo, compilalo e consegnalo alla sede ADISURC in via de Gaspari 45, NA."]},
 
 	 {"tag": "tesi",
 	 "patterns": ["Come richiedere la tesi","Come faccio a richiedere la tesi?", "richiesta tesi", "a chi devo chiedere per la tesi?","come si chiede la tesi?"],
@@ -83,7 +91,15 @@
 	 "patterns": ["Quante tasse devo pagare?", "Quante tasse dovró pagare?", "Come faccio a sapere quante tasse devo pagare?","tasse simulatore","voglio simulare quante tasse dovró pagare"],
 	 "responses": ["L'universitá Parthenope é sempre dal lato degli studenti: esiste una no tax area se il tuo ISEE é inferiore a 28.000 euro. \nSe cosí non fosse puoi accedere al simulatore tasse per vedere quante tasse dovrai pagare. Inoltre avrai dei benefit se nel corso dei tuoi studi riuscirai a maturare un numero di CFU stabilito."]},
 
+	 {"tag": "social",
+	 "patterns": ["Quali social ha la Parthenope?","Quali sono i social della Parthenope?", "C'é la Parthenope su Facebook?", "C'é il profilo Facebook?","C'é il profilo instagram?","C'é il profilo twitter?","dove posso seguire gli aggiornamenti?"],
+	 "responses": ["Puoi seguire la Parthenope su tutti i social: Facebook, Instagram, Twitter e Youtube. Resta sempre aggiornato con noi!"]},
+
+	 {"tag": "sessioni",
+	 "patterns": ["Quali sono le sessioni di esame?", "Quando si fanno gli esami?", "Quando inizia la sessione?","Quando iniziano gli esami?","In che mesi posso fare esami?"],
+	 "responses": ["La sessione invernale va dal mese di Gennaio a Marzo, la sessione estiva va da Giugno a Settembre, escluso Agosto. Buona Fortuna!", "Le sessioni vanno da Gennaio a Marzo e da Giugno a Settembre.", "Puoi fare esami nella sessione invernale [Gennaio - Marzo] e in quella estiva [Giugno - Settembre]."]},
+
 	 {"tag": "orarioLezioni",
-	 "patterns": ["dove posso leggere gli orari delle lezioni?", "orario lezioni", "a che ora ci sono le lezioni?", "a che ora iniziano le lezioni?"],
+	 "patterns": ["dove posso leggere gli orari delle lezioni?", "orario lezioni", "a che ora ci sono le lezioni?", "a che ora iniziano le lezioni?","a che ora stanno le lezioni","quando iniziano le lezioni?"],
 	 "responses": ["Puoi controllare gli orari delle lezioni sul nostro sito, se invece ti trovi in sede troverai i nostri monitor nei corridoi con tutte gli orari delle lezioni.", "Puoi consultare il sito della scuola, troverai gli orari di tutti i corsi di studi.", "Se sei in universitá puoi contollare sui monitor nei corridoi oppure recati sul sito della scuola."]}
 ]}

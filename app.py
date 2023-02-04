@@ -9,7 +9,7 @@ splashScreen.configure(width=500, height=550)
 splashScreen.eval('tk::PlaceWindow . center') #center splash screen
 
 # Set Label
-logo = PhotoImage(file="../../Desktop/TESI/Icona bianca.png") #load logo
+logo = PhotoImage(file="../../Desktop/TESI/Icona nera.png") #load logo
 splash_label = Label(splashScreen, font=18, image=logo)
 splashScreen.resizable(width=False, height=False)
 
