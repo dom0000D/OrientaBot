@@ -1,7 +1,8 @@
-import numpy as np
+import numpy as np # libreria per il calcolo scientifico in Python.
 import random
 import json
 
+#importo la libreria PyTorch, che è una libreria per il deep learning, e le sue sottolibrerie nn e DataLoader per la creazione e il caricamento dei dati.
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
@@ -15,6 +16,13 @@ with open('intents.json', 'r') as f:
 all_words = []
 tags = []
 xy = []
+
+"""
+Questo ciclo annidato estrae i tag e i modelli di frasi dall'oggetto intents e li utilizza per popolare le liste tags, all_words e xy. 
+Il primo ciclo scorre ogni intenzione nella lista intents['intents'] e estrae il tag associato a ogni intenzione. 
+Il tag viene quindi aggiunto alla lista tags. Il secondo ciclo all'interno scorre ogni modello di frase per ogni intenzione e utilizza la funzione
+ tokenize per suddividere la frase in parole
+"""
 # loop through each sentence in our intents patterns
 for intent in intents['intents']:
     tag = intent['tag']
@@ -40,8 +48,8 @@ print(len(tags), "tags:", tags)
 print(len(all_words), "unique stemmed words:", all_words)
 
 # create training data
-X_train = []
-y_train = []
+X_train = []  #contiene la bag of words per ogni frase del modello
+y_train = []  #contiene l'indice del tag di intenzione
 for (pattern_sentence, tag) in xy:
     # X: bag of words for each pattern_sentence
     bag = bag_of_words(pattern_sentence, all_words)
@@ -92,6 +100,11 @@ criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
 # Train the model
+"""
+Addestrare il modello sui dati di addestramento utilizzando un ciclo di epoche. 
+In ogni epoca, il modello viene eseguito su ogni batch di parole e etichette e la perdita viene calcolata utilizzando la funzione di perdita.
+ La perdita viene utilizzata per calcolare il grado di ottimizzazione utilizzando l'ottimizzatore definito in precedenza.
+"""
 for epoch in range(num_epochs):
     for (words, labels) in train_loader:
         words = words.to(device)
@@ -113,7 +126,10 @@ for epoch in range(num_epochs):
 
 
 print(f'final loss: {loss.item():.4f}')
-
+"""
+Salva il modello addestrato, il suo stato, la dimensione di input, hidden size, output size,
+tutte le parole e i tag in un file chiamato training.pth utilizzando la funzione torch.save().
+"""
 data = {
 "model_state": model.state_dict(),
 "input_size": input_size,
