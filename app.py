@@ -55,22 +55,22 @@ class ChatApplication:
         line.place(relwidth=1, rely=0.07,relheight=0.012)
 
         #text widget
-        self.text_widget = Text(self.window, width=20,height=2,bg="#2D033B",fg="#56fc03",font=FONT, padx= 5, pady=5) #20 caratteri a liena
+        self.text_widget = Text(self.window, width=20,height=2,bg="#2D033B",fg="#EAECEE",font="Helvetica 18", padx=10, pady=10) #20 caratteri a liena
 
         self.text_widget.place(relheight=0.745, relwidth=1, rely=0.08)
         self.text_widget.configure(cursor="trek", state=DISABLED)
 
         # scroll bar
         scrollbar = Scrollbar(self.text_widget)
-        scrollbar.place(relheight=1, relx=0.974)
+        scrollbar.place(relheight=1, relx=0.994)
         scrollbar.configure(command=self.text_widget.yview)
 
         #bottom label
         bottom_label = Label(self.window, bg="#540375", height=80)
-        bottom_label.place(relwidth=1, rely=0.825)
+        bottom_label.place(relwidth=1, rely=0.870)
 
         #message box
-        self.msg_entry = Entry(bottom_label,bg="#460C68", fg= TEXT_COLOR, font= FONT)
+        self.msg_entry = Entry(bottom_label,bg="#460C68", fg= TEXT_COLOR, font= "Helvetica 18")
         self.msg_entry.place(relwidth=0.74, relheight= 0.06, rely=0.008, relx= 0.011)
         self.msg_entry.focus() #quando starta l'app il cursore è già attivo
         self.msg_entry.bind("<Return>",self._on_enter_press)
