@@ -1,4 +1,3 @@
-import os
 import random
 import json
 import torch
@@ -26,16 +25,9 @@ model.load_state_dict(model_state)
 model.eval()
 
 
-
 bot_name = "OrientaBot"
-print("Ciao! Sono OrientaBot, cosa vuoi sapere? (scrivi 'exit' per uscire)")
-while True:
-    # sentence = "come mi iscrivo?"
-    sentence = input("Tu: ")
-    if sentence == "exit":
-        break
-
-    sentence = tokenize(sentence)
+def get_response(msg):
+    sentence = tokenize(msg)
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
     X = torch.from_numpy(X).to(device)
@@ -50,6 +42,5 @@ while True:
     if prob.item() > 0.75:
         for intent in intents['intents']:
             if tag == intent["tag"]:
-                print(f"{bot_name}: {random.choice(intent['responses'])}")
-    else:
-        print(f"{bot_name}: Scusami, non credo di aver capito...")
+                return random.choice(intent['responses'])
+    return "Scusami, non credo di aver capito..."

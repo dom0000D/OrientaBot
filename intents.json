@@ -9,7 +9,7 @@
 
 	 {"tag": "curiositá",
 	 "patterns": ["Dammi qualche info sulla Parthenope", "Mi dici qualche dato sull'universitá?", "Voglio sapere qualche news sull'universitá", "Posso avere qualche news sull'Ateneo?"],
-	 "responses": ["Sempre più studenti scelgono la Parthenope: è quanto registrano i dati diffusi dal Ministero dell’Università e della Ricerca nell’ambito dell’indagine sull’andamento delle Università in Italia.", "Il nostro ateneo é impegnato nella campagna Antartide 2023.", "Il CDS di Informatica é considerato uno dei migliori del Sud Italia.", "Sapevi che puoi lavorare per la tua Universitá? Ogni anno vengono emessi dei bandi per collaborazioni studentesche retribuite.", "L'universitá Parthenope é l'unica Universitá Italiana ad avere un accordo di Cooperazione Scientifica e Tecnologica per l'istituzione di un programma accademico su iOS Development.","Il nostro Ateneo é primo del Centro Sud per qualitá della Ricerca e tra i primi dieci in tutta Italia.","La Parthenope é plastic free! Troverai in ogni ateneo un distributore d'acqua, naturale e frizzante, completamente gratuito per la tua borraccia."]},
+	 "responses": ["Sempre più studenti scelgono la Parthenope: è quanto registrano i dati diffusi dal Ministero dell’Università e della Ricerca nell’ambito dell’indagine sull’andamento \n delle Università in Italia.", "Il nostro ateneo é impegnato nella campagna Antartide 2023.", "Il CDS di Informatica é considerato uno dei migliori del Sud Italia.", "Sapevi che puoi lavorare per la tua Universitá? Ogni anno vengono emessi dei bandi per collaborazioni studentesche retribuite.", "L'universitá Parthenope é l'unica Universitá Italiana ad avere un accordo di Cooperazione Scientifica e Tecnologica per l'istituzione di un programma accademico su iOS Development.","Il nostro Ateneo é primo del Centro Sud per qualitá della Ricerca e tra i primi dieci in tutta Italia.","La Parthenope é plastic free! Troverai in ogni ateneo un distributore d'acqua, naturale e frizzante, completamente gratuito per la tua borraccia."]},
 
 	 {"tag": "nome",
 	 "patterns": ["come ti chiami?", "qual é il tuo nome?", "chi sei?", "puoi dirmi il tuo nome?", "hai un nome?", "non ricordo il tuo nome"],
@@ -17,7 +17,7 @@
 
 	 {"tag": "sedi",
 	 "patterns": ["dove si trovano le sedi?", "dove si trova l'universitá?", "in che zona é l'universitá?", "dove sta l'uni?", "dove é situata l'universitá?","quante sedi ha l'universitá?","quanti sedi ci sono?","quali sono le sedi dell'ateneo?"],
-	 "responses": ["Ci sono diverse sedi in tutta Napoli e provincia: \n1. La sede centrale dell’Università degli Studi di Napoli “Parthenope” è collocata in Via Ammiraglio Ferdinando Acton n. 38.\n2. Il Palazzo Pacanowski è situato a Napoli, in Via Generale Parisi n. 13, nelle adiacenze della Scuola Militare Nunziatella. Compone dei Dipartimenti di Giurisprudenza, Studi Aziendali ed Economici, Studi Aziendali e Quantitativi, Studi Economici e Giuridici.\n3. La sede al Centro Direzionale, che ospita il Dipartimento di Ingegneria e del Dipartimento di Scienze e Tecnologie.\n4. Villa Doria d’Angri, una delle più importanti ville neoclassiche italiane situata a Posillipo, qui potrai seguire il corso Apple Foundation.\n5. In Via Medina, dove ha sede il Dipartimento di Scienze Motorie e del Benessere.\n6. La sede di Nola, ospita tre corsi di laurea triennale in “Economia & Management”, “Ingegneria e Scienze Informatiche per la Cybersecurity” e “Scienze Motorie” e un corso di laurea magistrale a ciclo unico in “Giurisprudenza”."]},
+	 "responses": ["Ci sono diverse sedi in tutta Napoli e provincia: \n1. La sede centrale dell’Università degli Studi di Napoli “Parthenope” è collocata in Via Ammiraglio Ferdinando Acton n. 38.\n2. Il Palazzo Pacanowski è situato a Napoli, in Via Generale Parisi n. 13, nelle adiacenze della Scuola Militare Nunziatella. Compone dei Dipartimenti di Giurisprudenza,\n Studi Aziendali ed Economici, Studi Aziendali e Quantitativi, Studi Economici e Giuridici.\n3. La sede al Centro Direzionale, che ospita il Dipartimento di Ingegneria e del Dipartimento di Scienze e Tecnologie.\n4. Villa Doria d’Angri, una delle più importanti ville neoclassiche italiane situata a Posillipo, qui potrai seguire il corso Apple Foundation.\n5. In Via Medina, dove ha sede il Dipartimento di Scienze Motorie e del Benessere.\n6. La sede di Nola, ospita tre corsi di laurea triennale in “Economia & Management”, “Ingegneria e Scienze Informatiche per la Cybersecurity” e “Scienze Motorie” \n e un corso di laurea magistrale a ciclo unico in “Giurisprudenza”."]},
 
 	 {"tag": "esami",
 	 "patterns": ["Quanti esami ci sono a informatica?", "numero degli esami a informatica", "quanti esami dovró sostenere a informatica?", "quanti esami ha informatica?","Mi dici il numero degli esami di informatica?"],
@@ -37,7 +37,7 @@
 
 	 {"tag": "trasporto",
 	 "patterns": ["Come arrivo al centro direzionale?","Come arrivo al cdr?","cdr","centro direzionale","come arrivare al centro direzionale","Come arrivo in sede?", "Qual è la strada per andare al centro direzionale?", "Posso arrivare al centro direzionale col treno?"],
-	 "responses": ["Puoi arrivare al centro Direzionale in diversi modi molto comodi: se abiti a Napoli puoi prendere la Metropolitana e fermarti a Garibaldi, dopo 5 minuti di passeggiata sarai arrivato al CDR. Se provieni dai paesi vesuviani o limitrofi puoi usufruire del servizio offerto dall'EAV: basta scendere alla fermata Centro Direzionale e il gioco é fatto!", "Puoi prendere la Metro e scendere a Garibaldi oppure utilizzare il servizio ferroviario EAV e scendere all fermata Centro direzionale."]},
+	 "responses": ["Puoi arrivare al centro Direzionale in diversi modi molto comodi: se abiti a Napoli puoi prendere la Metropolitana e fermarti a Garibaldi,\n dopo 5 minuti di passeggiata sarai arrivato al CDR. \nSe provieni dai paesi vesuviani o limitrofi puoi usufruire del servizio offerto dall'EAV: basta scendere alla fermata Centro Direzionale e il gioco é fatto!", "Puoi prendere la Metro e scendere a Garibaldi oppure utilizzare il servizio ferroviario EAV e scendere all fermata Centro direzionale."]},
 
 	 {"tag": "rettore",
 	 "patterns": ["Come si chiama il rettore?", "Qual è il nome del rettore?", "Chi é il rettore dell'universitá?"],
@@ -53,22 +53,22 @@
 
 	 {"tag": "uso",
 	 "patterns": ["A cosa servi?","cosa posso chiederti", "A che servi?", "Cosa mi puoi dire?","In cosa mi puoi aiutare?","cosa sai fare","che sai fare","che ti posso chiedere","cosa ti posso chidere"],
-	 "responses": ["Sono stato creato per poter aiutare gli studenti che cercano informazioni riguardo l'Ateneo, tasse, segreteria, lezioni, immatricolazioni e tanto altro. Prova a chiedermi qualcosa e cercheró di esserti utile!"]},
+	 "responses": ["Sono stato creato per poter aiutare gli studenti che cercano informazioni riguardo l'Ateneo, tasse, segreteria, lezioni, immatricolazioni e tanto altro. \nProva a chiedermi qualcosa e cercheró di esserti utile!"]},
 
 	 {"tag": "tesi",
 	 "patterns": ["Come richiedere la tesi","Come faccio a richiedere la tesi?", "richiesta tesi", "a chi devo chiedere per la tesi?","come si chiede la tesi?"],
-	 "responses": ["Per richiedere la tesi devi andare dal Professore che hai scelto e vedere la sua disponibilitá. Dopo accedi al tuo profilo esse3 e alla voce 'Laurea' avrai tutte le istruzioni. In bocca al lupo!"]},
+	 "responses": ["Per richiedere la tesi devi andare dal Professore che hai scelto e vedere la sua disponibilitá. Dopo accedi al tuo profilo esse3 e alla voce 'Laurea' avrai tutte le istruzioni.\n In bocca al lupo!"]},
 
 	 {"tag": "tirocinio",
 	 "patterns": ["Come inizio il tirocinio?","hai info sul tirocinio?", "aiuto tirocinio", "Come si inizia il tirocinio?","A chi devo chiedere per il tirocinio?"],
-	 "responses": ["Per iniziare il tirocinio dovrai aver completato gli esami obbligatori, ad esempio se sei uno studente di Informatica dovrai aver completato Algoritmi e Strutture Dati, Sistemi Operativi, Programmazione III, Basi di Dati. Recati dal responsabile dei tirocini cercandolo sul sito e inviagli una mail di richiesta. Il responsabile per Informatica é il Prof. Antonio Maratea. Buon lavoro!"]},
+	 "responses": ["Per iniziare il tirocinio dovrai aver completato gli esami obbligatori, ad esempio se sei uno studente di Informatica dovrai aver completato Algoritmi e Strutture Dati,\n Sistemi Operativi, Programmazione III, Basi di Dati. Recati dal responsabile dei tirocini cercandolo sul sito e inviagli una mail di richiesta. Il responsabile per Informatica é il Prof. Antonio Maratea. Buon lavoro!"]},
 
 	 {"tag": "zonaStudio",
 	 "patterns": ["Posso studiare in sede?", "C'é una biblioteca dove studiare?", "Posso studiare in universitá?","Ci sono aulee studio?","biblioteca e aulee studio"],
 	 "responses": ["Puoi studiare in sede tutti i giorni feriali, ci sono molti spazi dedicati allo studio su ogni piano dell'edificio oppure puoi recarti in biblioteca.", "Puoi studiare in biblioteca, in aula studio o in uno dei banchi che si trovano sui piani dell'edificio!"]},
 
 	 {"tag": "portineria",
-	 "patterns": ["Ho dimenticato il mio ombrello in aula, come posso ritrovarlo?","Ho perso lo zaino in sede","Ho smarrito il tablet in aula","Ho lasciato il mio quaderno in aula come posso ritrovarlo?", "Ho perso il mio cellulare, come posso ritrovarlo?","Esiste un centro di oggetti smarriti?"],
+	 "patterns": ["Ho dimenticato il mio ombrello in aula, come posso ritrovarlo?","Ho perso lo zaino in sede","Ho smarrito il tablet in aula","Ho lasciato il mio quaderno in aula come posso ritrovarlo?","Ho perso la mia penna","Ho dimenticato la mia borsa", "Ho perso il mio cellulare, come posso ritrovarlo?","Esiste un centro di oggetti smarriti?"],
 	 "responses": ["Mi dispiace per il tuo oggetto! Prova ad andare in portineria, c'é il centro di oggetti smarriti."]},
 
 	 {"tag": "tasse",
