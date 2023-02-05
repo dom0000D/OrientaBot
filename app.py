@@ -26,7 +26,7 @@ mainloop()
 
 BG_COLOR = "#063970" #color background
 TEXT_COLOR = "#EAECEE"
-FONT_BOLD = "Helvetica 13 bold"
+FONT_BOLD = "Helvetica 16 bold"
 BG_GRAY = "#ABB2B9"
 FONT = "Helvetica 14"
 class ChatApplication:
@@ -71,13 +71,13 @@ class ChatApplication:
 
         #message box
         self.msg_entry = Entry(bottom_label,bg="#460C68", fg= TEXT_COLOR, font= "Helvetica 18")
-        self.msg_entry.place(relwidth=0.74, relheight= 0.06, rely=0.008, relx= 0.011)
+        self.msg_entry.place(relwidth=0.74, relheight= 0.06, rely=0.020, relx= 0.011)
         self.msg_entry.focus() #quando starta l'app il cursore è già attivo
         self.msg_entry.bind("<Return>",self._on_enter_press)
 
         #send button
-        send_button = Button(bottom_label, text="INVIO", font=FONT_BOLD, width=20, command=lambda: self._on_enter_press(None))
-        send_button.place(relx=0.77, rely=0.008, relheight=0.06, relwidth=0.22)
+        send_button = Button(bottom_label, text="┗|・o・|┛", font="Helvetica 30", width=20, command=lambda: self._on_enter_press(None))
+        send_button.place(relx=0.77, rely=0.020, relheight=0.06, relwidth=0.22)
 
     def _on_enter_press(self,event):
         msg = self.msg_entry.get()
