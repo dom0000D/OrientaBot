@@ -9,10 +9,9 @@ splashScreen.configure(width=500, height=550)
 splashScreen.eval('tk::PlaceWindow . center') #center splash screen
 
 # Set Label
-logo = PhotoImage(file="../../Desktop/TESI/Icona nera.png") #load logo
+logo = PhotoImage(file="../../Desktop/TESI/logo.png") #load logo
 splash_label = Label(splashScreen, font=18, image=logo)
 splashScreen.resizable(width=False, height=False)
-
 splash_label.pack()
 
 # main window function
@@ -24,7 +23,6 @@ splashScreen.after(2500, main)
 # Execute tkinter
 mainloop()
 
-BG_COLOR = "#063970" #color background
 TEXT_COLOR = "#EAECEE"
 FONT_BOLD = "Helvetica 16 bold"
 BG_GRAY = "#ABB2B9"
@@ -43,26 +41,26 @@ class ChatApplication:
         self.window.resizable(width=False, height=False)
         self.window.configure (bg = "#000000")
         self.window.attributes('-fullscreen', True)
-
         self.window.eval('tk::PlaceWindow . center')
 
         #head Label
-        head_label = Label(self.window, bg="#000000", fg= TEXT_COLOR, text= "[∵┌]└[ ∵ ]┘[┐∵]┘ ORIENTABOT [∵┌]└[ ∵ ]┘[┐∵]┘", font=FONT_BOLD, pady=15)
+        head_label = Label(self.window, bg="#000000", fg= TEXT_COLOR, text= "[∵┌]└[ ∵ ]┘[┐∵]┘ ORIENTABOT [∵┌]└[ ∵ ]┘[┐∵]┘", font="Helvetica 25", pady=20)
         head_label.place(relwidth=1)
 
-        #divider
-        line = Label(self.window, width=400, bg=BG_GRAY)
-        line.place(relwidth=1, rely=0.07,relheight=0.012)
-
         #text widget
-        self.text_widget = Text(self.window, width=40,height=2,bg="#f7ecda",font="Helvetica 18", padx=10, pady=10) #20 caratteri a liena
 
+        self.photo = PhotoImage(file="../../Desktop/a.png")
+        self.text_widget = Text(self.window, width=40, height=2, bg="#f7ecda", font="Helvetica 18", padx=10,pady=10)  # 20 caratteri a liena
         self.text_widget.place(relheight=0.745, relwidth=1, rely=0.08)
         self.text_widget.configure(cursor="trek", state=DISABLED)
 
+        self.canvas = Canvas(self.window, bg="#f7ecda", highlightthickness=0, height=self.photo.height(),width=self.photo.width())
+        self.canvas.place(relx=1, rely=0.2, anchor="ne")
+        self.canvas.create_image(0, 0, image=self.photo, anchor=NW)
+
         # scroll bar
         scrollbar = Scrollbar(self.text_widget)
-        scrollbar.place(relheight=1, relx=0.994)
+        scrollbar.place(relheight=1, relx=0.995)
         scrollbar.configure(command=self.text_widget.yview)
 
         #bottom label
@@ -76,7 +74,7 @@ class ChatApplication:
         self.msg_entry.bind("<Return>",self._on_enter_press)
 
         #send button
-        send_button = Button(bottom_label, text="┗|・o・|┛", font="Helvetica 30", width=20, command=lambda: self._on_enter_press(None))
+        send_button = Button(bottom_label, text="┗|・o・|┛", font="Helvetica 30",width=20, command=lambda: self._on_enter_press(None))
         send_button.place(relx=0.77, rely=0.020, relheight=0.06, relwidth=0.22)
 
     def _on_enter_press(self,event):
