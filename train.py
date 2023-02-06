@@ -15,7 +15,7 @@ with open('intents.json', 'r') as f:
 
 all_words = []
 tags = []
-xy = []
+xy = [] #lista che conterrá i patterns col testo
 
 """
 Questo ciclo annidato estrae i tag e i modelli di frasi dall'oggetto intents e li utilizza per popolare le liste tags, all_words e xy. 
@@ -25,23 +25,23 @@ Il tag viene quindi aggiunto alla lista tags. Il secondo ciclo all'interno scorr
 """
 # loop through each sentence in our intents patterns
 for intent in intents['intents']:
-    tag = intent['tag']
+    tag = intent['tag'] #recupera tutti i tag
     # add to tag list
     tags.append(tag)
-    for pattern in intent['patterns']:
+    for pattern in intent['patterns']: #loop su tutti i patterns e li tokenizziamo
         # tokenize each word in the sentence
         w = tokenize(pattern)
         # add to our words list
-        all_words.extend(w)
+        all_words.extend(w) #uso extend poiché w é un array
         # add to xy pair
-        xy.append((w, tag))
+        xy.append((w, tag)) #ho una coppia pattern - tag
 
 # stem and lower each word
 ignore_words = ['?', '.', '!',',']
-all_words = [stem(w) for w in all_words if w not in ignore_words]
+all_words = [stem(w) for w in all_words if w not in ignore_words] #stem ogni parola ignorando la punteggiatura
 # remove duplicates and sort
 all_words = sorted(set(all_words))
-tags = sorted(set(tags))
+
 
 print(len(xy), "patterns")
 print(len(tags), "tags:", tags)
@@ -58,15 +58,16 @@ for (pattern_sentence, tag) in xy:
     label = tags.index(tag)
     y_train.append(label)
 
+#conversione in numpy array
 X_train = np.array(X_train)
 y_train = np.array(y_train)
 
 # Hyper-parameters 
-num_epochs = 1000
+num_epochs = 1000 #quando il training set é sottoposto al modello si ha una epoch. Il training set potrebbe essere troppo grande per essere elaborato tutti in una volta quindi lo dividiamo in sottogruppi chiamati batch. Il numero di esempi contenuti in ogni batch é detto batch size. se ho 2k esempi posos dividere il set in batch con 500 esempi ciascuni e quindi 1 epoch ha 4 interazioni. Il numero di epoch ed il batch size influiscono sulla velocità di addestramento di un modello, ma anche sul suo modo di perfezionarsi
 batch_size = 8
 learning_rate = 0.001
 input_size = len(X_train[0])
-hidden_size = 8
+hidden_size = 8  #La dimensione nascosta è il numero di caratteristiche dello stato nascosto per RNN. Quindi, se aumenti la dimensione nascosta, calcoli la funzionalità più grande come output dello stato nascosto.
 output_size = len(tags)
 print(input_size, output_size)
 
@@ -86,10 +87,7 @@ class ChatDataset(Dataset):
         return self.n_samples
 
 dataset = ChatDataset()
-train_loader = DataLoader(dataset=dataset,
-                          batch_size=batch_size,
-                          shuffle=True,
-                          num_workers=0)
+train_loader = DataLoader(dataset=dataset,batch_size=batch_size, shuffle=True,  num_workers=0)
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
