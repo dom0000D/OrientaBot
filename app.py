@@ -41,13 +41,13 @@ class ChatApplication:
     def setup_main_window(self):
         self.window.title("OrientaBot")
         self.window.resizable(width=False, height=False)
-        self.window.configure (bg = BG_COLOR)
+        self.window.configure (bg = "#000000")
         self.window.attributes('-fullscreen', True)
 
         self.window.eval('tk::PlaceWindow . center')
 
         #head Label
-        head_label = Label(self.window, bg="#2D033B", fg= TEXT_COLOR, text= "[∵┌]└[ ∵ ]┘[┐∵]┘ ORIENTABOT [∵┌]└[ ∵ ]┘[┐∵]┘", font=FONT_BOLD, pady=15)
+        head_label = Label(self.window, bg="#000000", fg= TEXT_COLOR, text= "[∵┌]└[ ∵ ]┘[┐∵]┘ ORIENTABOT [∵┌]└[ ∵ ]┘[┐∵]┘", font=FONT_BOLD, pady=15)
         head_label.place(relwidth=1)
 
         #divider
@@ -55,7 +55,7 @@ class ChatApplication:
         line.place(relwidth=1, rely=0.07,relheight=0.012)
 
         #text widget
-        self.text_widget = Text(self.window, width=20,height=2,bg="#2D033B",fg="#EAECEE",font="Helvetica 18", padx=10, pady=10) #20 caratteri a liena
+        self.text_widget = Text(self.window, width=40,height=2,bg="#f7ecda",font="Helvetica 18", padx=10, pady=10) #20 caratteri a liena
 
         self.text_widget.place(relheight=0.745, relwidth=1, rely=0.08)
         self.text_widget.configure(cursor="trek", state=DISABLED)
@@ -66,11 +66,11 @@ class ChatApplication:
         scrollbar.configure(command=self.text_widget.yview)
 
         #bottom label
-        bottom_label = Label(self.window, bg="#540375", height=80)
+        bottom_label = Label(self.window, bg="#f4e4ca", height=80)
         bottom_label.place(relwidth=1, rely=0.870)
 
         #message box
-        self.msg_entry = Entry(bottom_label,bg="#460C68", fg= TEXT_COLOR, font= "Helvetica 18")
+        self.msg_entry = Entry(bottom_label,bg="#cec3ad", fg= "#000000", font= "Helvetica 18")
         self.msg_entry.place(relwidth=0.74, relheight= 0.06, rely=0.020, relx= 0.011)
         self.msg_entry.focus() #quando starta l'app il cursore è già attivo
         self.msg_entry.bind("<Return>",self._on_enter_press)

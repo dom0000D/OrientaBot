@@ -49,7 +49,7 @@
 
 	 {"tag": "rettore",
 	 "patterns": ["Come si chiama il rettore?", "Qual è il nome del rettore?", "Chi é il rettore dell'universitá?"],
-	 "responses": ["Il nome del Magnifico Rettore é il Prof. Alberto Carotenuto.", "Il Rettore dell'Universitá Parthenope é il Professore Alberto Carotenuto, eletto per il sessennio 2022 - 2028."]},
+	 "responses": ["Il nome del Magnifico Rettore é il Prof. Antonio Garofalo.", "Il Rettore dell'Universitá Parthenope é il Professore Antonio Garofalo, eletto per il sessennio 2022 - 2028."]},
 
 	 {"tag": "wifi",
 	 "patterns": ["Come si accede al wifi?","come mi connetto al wifi","come mi connetto a internet", "come accedo al wifi?", "come accedo a internet?","c'é una rete internet?", "come mi collego a internet?", "come mi collego al wifi?"],
@@ -79,9 +79,17 @@
 	 "patterns": ["come richiedere la smart card?","come si fa la smart card?","come faccio la carta adisurc?","come faccio la scheda adisurc?", "come fare la card della mensa?", "come si fa la smart card della mensa?","come faccio a richiedere la smart card?","come si fa la smart card adisurc?","come faccio a richiedere la smart card?"],
 	 "responses": ["Tutti gli studenti possono richiedere la Smart Card Adisurc per la mensa universitaria. \n1.Clicca su www.adisurccampania.it \n2.Seleziona la tua Universitá e accedi con credenziali SPID o CIE \n3.Seleziona anno e smart card prima emissione \n4.Stampa il modulo, compilalo e consegnalo alla sede ADISURC in via de Gaspari 45, NA."]},
 
-	 {"tag": "tesi",
-	 "patterns": ["Come richiedere la tesi","Come faccio a richiedere la tesi?", "richiesta tesi", "a chi devo chiedere per la tesi?","come si chiede la tesi?"],
-	 "responses": ["Per richiedere la tesi devi andare dal Professore che hai scelto e vedere la sua disponibilitá. Dopo accedi al tuo profilo esse3 e alla voce 'Laurea' avrai tutte le istruzioni.\n In bocca al lupo!"]},
+	{"tag": "tesi",
+	"patterns": ["Come richiedere la tesi","Come faccio a richiedere la tesi?", "richiesta tesi", "a chi devo chiedere per la tesi?","come si chiede la tesi?"],
+	"responses": ["Lo studente concorda un argomento con un docente del Corso di Laurea (“Relatore”), che sovrintende alla stesura dell’elaborato\n,dopo aver acquisito almeno 120 CFU per gli immatricolati a partire dall’a.a. 2018/2019 e 150 CFU per gli iscritti negli anni accademici precedenti.\nLo studente può chiedere l'assegnazione dell'argomento solo se ha superato gli esami di Algoritmi e Strutture Dati, Basi di Dati, Programmazione III\ne Laboratorio di Programmazione III e Sistemi Operativi.\nL’argomento dell’elaborato dovrà riguardare almeno uno degli insegnamenti presenti nel piano di studi dello studente,\nanche se alla data di presentazione della “Domanda di svolgimento dell’elaborato di Laurea” il relativo esame non è ancora stato superato.\nLo studente, almeno 60 giorni prima della seduta di Laurea nella quale intende discutere l’elaborato finale\ndeve presentare al Presidente del Consiglio di Coordinamento Didattico una “Domanda di svolgimento dell’Elaborato di laurea” (da compilare tramite piattaforma ESSE3), debitamente compilata e approvata dal primo relatore,\nallegando il piano di studi con l’indicazione degli esami sostenuti e quelli da sostenere, al fine di certificare l’acquisizione dei CFU minimi richiesti per l’inizio dell’attività inerente l’elaborato di Laurea.\nTale domanda deve essere sottoposta per l’approvazione al Presidente del Consiglio di Coordinamento Didattico, che valuta\nla congruenza dell’argomento dell’elaborato con il piano di studi dello studente.\nUna volta approvata, la domanda deve essere consegnata in originale alla Segreteria Didattica di Dipartimento, che procede a protocollarla.\nIn bocca al lupo!"]},
+
+	{"tag": "seduta",
+	"patterns": ["Come funziona la seduta di laurea?","seduta di laurea?", "Come prenotare la seduta di laurea?", "Qual é il procedimento della seduta di laurea?","come si svolge la seduta di laurea?"],
+	"responses": ["Per essere ammesso alla seduta di esame di Laurea, lo studente deve aver sostenuto e superato gli esami previsti dal proprio piano di studi, il tirocinio e le ulteriori conoscenze, almeno 20 giorni prima di tale seduta.\nLa prenotazione per la seduta di esame di Laurea deve essere effettuata presso la Segreteria Studenti. L’elaborato deve essere consegnato dal laureando in formato elettronico presso la competente segreteria didattica almeno 20 giorni prima della seduta.\nAl termine della discussione degli elaborati dei candidati, la Commissione stabilisce il voto di Laurea e conferisce il titolo di studio."]},
+
+	{"tag": "voto",
+	"patterns": ["come viene calcolato il voto di laure?","come si calcola il voto di laurea?", "qual é il voto di laurea?", "come faccio a calcolare il voto di laurea?","come viene calcolato il voto di laurea?"],
+	"responses": ["Il voto di Laurea viene stabilito dalla Commissione in seduta riservata, dopo la discussione dell’elaborato finale, e proclamato in seduta pubblica.\nIl voto di Laurea è calcolato, per gli studenti immatricolati a partire dall’a.a. 2018/2019, come la somma di:\n1. Media ponderata\n\n2. Durata degli studi\n\t\ta. completamento degli studi entro 3 anni - 3 punti\n\t\tb. completamento degli studi entro 4 anni - 1 punto \n\n3. Qualità degli studi\n\t\ta. media superiore o uguale a 105 – 3 punti\n\t\tb. media compresa tra 99 e 104 – 2 punti\n\t\tc. media compresa tra 92 e 98 – 1 punto\n\t\td. tre o più esami con lodi – 1 punto\n\n4. Partecipazione ai Programmi di mobilità internazionale\n\n\t\ta. 12 CFU maturati all'estero con il programma ERASMUS incluso i CFU maturati per stage curriculari svolti all'estero 3 punti\n\n5. Valutazione della prova finale - massimo 5 punti"]},
 
 	 {"tag": "tirocinio",
 	 "patterns": ["Come inizio il tirocinio?","hai info sul tirocinio?", "aiuto tirocinio", "Come si inizia il tirocinio?","A chi devo chiedere per il tirocinio?"],
