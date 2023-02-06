@@ -1,11 +1,15 @@
 {"intents": [
-	{"tag": "saluti",
+	 {"tag": "saluti",
 	 "patterns": ["ciao", "hey", "buongiorno", "ciao bot", "hey come va?", "ciao ho bisogno di aiuto","mi serve aiuto","ciao, puoi aiutarmi?"],
 	 "responses": ["Ciao!", "Hey!", "Buongiorno, come posso aiutarti?", "Ciao, dimmi tutto!", "Hey, hai qualcosa da chiedermi?"]},
 
 	 {"tag": "arrivederci",
-	 "patterns": ["grazie per l'aiuto!", "Ci vediamo", "Tutto chiaro, grazie", "Ci si vede", "grazie mille, alla prossima", "Arrivederci bot"],
+	 "patterns": ["grazie per l'aiuto!", "Ci vediamo","grazie","ok", "Tutto chiaro, grazie", "Ci si vede", "grazie mille, alla prossima", "Arrivederci bot","sei stato d'aiuto"],
 	 "responses": ["Felice di averti aiutato!", "Arrivederci, a presto!", "Ci vediamo presto", "Alla prossima", "Sono sempre qui per te"]},
+
+	 {"tag": "feel",
+	 "patterns": ["come stai?", "tutto bene?", "tutto ok?", "come ti senti?"],
+	 "responses": ["Sono pronto per aiutarti!", "Bene, come posso aiutarti?", "Pieno di notizie per te!", "Alla grande."]},
 
 	 {"tag": "curiositá",
 	 "patterns": ["Dammi qualche info sulla Parthenope", "Mi dici qualche dato sull'universitá?", "Voglio sapere qualche news sull'universitá", "Posso avere qualche news sull'Ateneo?"],
@@ -33,10 +37,10 @@
 
 	 {"tag": "sito",
 	 "patterns": ["Qual é il sito della scuola?", "Qual é il sito dell'ateneo?", "Qual é il sito?", "Qual é il sito dell'universitá?","Qual é il sito della Parthenope?"],
-	 "responses": ["Il sito dell'Universitá é https://www.uniparthenope.it. \nQui puoi trovare tutto ció che cerchi."]},
+	 "responses": ["Il sito dell'Universitá é https://www.uniparthenope.it. Qui puoi trovare tutto ció che cerchi."]},
 
 	 {"tag": "apertura",
-	 "patterns": ["Quando é aperta l'universitá?", "in che giorni posso andare in sede?", "quali sono i giorni per andare in universitá?","Quando é aperta la Parthenpope?"],
+	 "patterns": ["Quando é aperta l'universitá?","a che ora chiude l'universitá?", "in che giorni posso andare in sede?", "quali sono i giorni per andare in universitá?","Quando é aperta la Parthenpope?"],
 	 "responses": ["L'universitá é aperta dal lunedí al venerdí, dalle 08.00 fino alle 19.30.", "Dal lunedí al venerdí, dalle 08.00 fino alle 19.30.", "Puoi andare in sede dal lunedí al venerdí, dalle 08.00 fino alle 19.30."]},
 
 	 {"tag": "trasporto",
@@ -47,11 +51,15 @@
 	 "patterns": ["Come si chiama il rettore?", "Qual è il nome del rettore?", "Chi é il rettore dell'universitá?"],
 	 "responses": ["Il nome del Magnifico Rettore é il Prof. Alberto Carotenuto.", "Il Rettore dell'Universitá Parthenope é il Professore Alberto Carotenuto, eletto per il sessennio 2022 - 2028."]},
 
+	 {"tag": "wifi",
+	 "patterns": ["Come si accede al wifi?","come mi connetto al wifi","come mi connetto a internet", "come accedo al wifi?", "come accedo a internet?","c'é una rete internet?", "come mi collego a internet?", "come mi collego al wifi?"],
+	 "responses": ["Per avere accesso alla rete Wi-Fi dell'Ateneo devi collegarti a eduroam. Inserisci le te credenziali [matricola e password] per connetterti.","L'universitá Parthenope offre un ottimo servizio Internet libero per tutti gli studenti, basterá collegarsi alla rete EDUROAM e il gioco é fatto.","Collegati alla rete EDUROAM con le tue credenziali [matricola e password] per accedere alla rete Internet di tutte le Sedi."]},
+
 	 {"tag": "cds",
 	 "patterns": ["Che corsi ci sono?","cosa si studia alla Parthenope?", "che corsi di studi ci sono?", "quali sono i corsi di studio?", "quali sono i corsi?", "quali sono le facoltá?", "che facoltá ci sono?"],
 	 "responses": ["L'univesitá Parthenope offre una vasta gamma di corsi di studi: \nInformatica \nConduzione del Mezzo Navale\nEconomia Aziendale\nEconomia e Commercio\nEconomia e Management – Sede di Nola\nGiurisprudenza (magistrale a ciclo unico)\nGiurisprudenza (magistrale a ciclo unico) – Sede di Nola\nIngegneria Civile e Ambientale per la Mitigazione dei Rischi\nIngegneria e Scienze Informatiche per la Cybersecurity – Sede di Nola\nIngegneria Gestionale\nIngegneria Informatica, Biomedica e delle Telecomunicazioni\nManagement delle Imprese Internazionali\nManagement delle Imprese Turistiche\nScienze Biologiche\nScienze dell’Amministrazione, dell’Organizzazione e Consulenza del Lavoro\nStatistica e Informatica per l’Azienda, la Finanza e le Assicurazioni\nScienze Nautiche, Aeronautiche e Meteo-oceanografiche\nScienze Motorie\nScienze Motorie – Sede di Nola"]},
 
-	{"tag": "immatricolazione",
+	 {"tag": "immatricolazione",
 	 "patterns": ["Come faccio ad immatricolarmi?","come immatricolarsi", "come faccio l'iscrizione?", "come mi iscrivo all'universitá?","come iscriversi","come iscriversi all'universitá","come mi immatricolo","come mi iscrivo","qual é la procedura per iscriversi"],
 	 "responses": ["Stai per iscriverti per la prima volta all'Università? \nEcco tutti i passaggi che dovrai fare per immatricolarti. Accedi al tuo profilo esse3.\n 1. Compilazione della domanda di immatricolazione\n 2. Seleziona il tipo di immatricolazione [standard, part time, studente rinunciatario...]\n 3. Seleziona il Corso di Studi. \n 4. Inserisci il tuo ISEE Universitario. \n 5. Effettua l'upload di tutti i tuoi documenti. \n 6.Inserire l'anno accademico e controlla che i dati sono corretti. \n 7. Pagamento delle tasse di iscrizione. \n Se hai bisogno di aiuto puoi recarti in sede e chiedere alla segreteria per tutte le informazioni che desideri."]},
 
@@ -83,6 +91,10 @@
 	 "patterns": ["Posso studiare in sede?", "C'é una biblioteca dove studiare?", "Posso studiare in universitá?","Ci sono aulee studio?","biblioteca e aulee studio"],
 	 "responses": ["Puoi studiare in sede tutti i giorni feriali, ci sono molti spazi dedicati allo studio su ogni piano dell'edificio oppure puoi recarti in biblioteca.", "Puoi studiare in biblioteca, in aula studio o in uno dei banchi che si trovano sui piani dell'edificio!"]},
 
+	 {"tag": "tolc",
+	 "patterns": ["C'é un tolc da superare?","Devo fare il test di ingresso?","Per essere ammesso devo superare una prova?","Tolc","Devo superare un test di ingresso?"],
+	 "responses": ["Per iscriverti al corso di Informatica dovrai sostenere un test di autovalutazione: non c'é nessun requisito o punteggio per essere ammesso."]},
+
 	 {"tag": "portineria",
 	 "patterns": ["Ho dimenticato il mio ombrello in aula, come posso ritrovarlo?","Ho perso lo zaino in sede","Ho smarrito il tablet in aula","Ho lasciato il mio quaderno in aula come posso ritrovarlo?","Ho perso la mia penna","Ho dimenticato la mia borsa", "Ho perso il mio cellulare, come posso ritrovarlo?","Esiste un centro di oggetti smarriti?"],
 	 "responses": ["Mi dispiace per il tuo oggetto! Prova ad andare in portineria, c'é il centro di oggetti smarriti."]},
@@ -92,7 +104,7 @@
 	 "responses": ["L'universitá Parthenope é sempre dal lato degli studenti: esiste una no tax area se il tuo ISEE é inferiore a 28.000 euro. \nSe cosí non fosse puoi accedere al simulatore tasse per vedere quante tasse dovrai pagare. Inoltre avrai dei benefit se nel corso dei tuoi studi riuscirai a maturare un numero di CFU stabilito."]},
 
 	 {"tag": "social",
-	 "patterns": ["Quali social ha la Parthenope?","Quali sono i social della Parthenope?", "C'é la Parthenope su Facebook?", "C'é il profilo Facebook?","C'é il profilo instagram?","C'é il profilo twitter?","dove posso seguire gli aggiornamenti?"],
+	 "patterns": ["Quali social ha la Parthenope?","Quali sono i vostri social?","Dove posos seguire la parthenope?","Quali sono i social della Parthenope?", "C'é la Parthenope su Facebook?", "C'é il profilo Facebook?","C'é il profilo instagram?","C'é il profilo twitter?","dove posso seguire gli aggiornamenti?"],
 	 "responses": ["Puoi seguire la Parthenope su tutti i social: Facebook, Instagram, Twitter e Youtube. Resta sempre aggiornato con noi!"]},
 
 	 {"tag": "sessioni",
