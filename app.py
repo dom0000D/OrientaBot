@@ -48,19 +48,19 @@ class ChatApplication:
         head_label.place(relwidth=1)
 
         #text widget
-
-        self.photo = PhotoImage(file="../../Desktop/a.png")
         self.text_widget = Text(self.window, width=40, height=2, bg="#f7ecda", font="Helvetica 18", padx=10,pady=10)  # 20 caratteri a liena
         self.text_widget.place(relheight=0.745, relwidth=1, rely=0.08)
         self.text_widget.configure(cursor="trek", state=DISABLED)
 
+        #foto del bot a destra
+        self.photo = PhotoImage(file="../../Desktop/TESI/c.png")
         self.canvas = Canvas(self.window, bg="#f7ecda", highlightthickness=0, height=self.photo.height(),width=self.photo.width())
-        self.canvas.place(relx=1, rely=0.2, anchor="ne")
+        self.canvas.place(relx=0.96, rely=0.65, anchor="ne")
         self.canvas.create_image(0, 0, image=self.photo, anchor=NW)
 
         # scroll bar
         scrollbar = Scrollbar(self.text_widget)
-        scrollbar.place(relheight=1, relx=0.995)
+        scrollbar.place(relheight=1, relx=2) #relx 2 cosí é invisibile poiché fuori campo
         scrollbar.configure(command=self.text_widget.yview)
 
         #bottom label
@@ -74,7 +74,7 @@ class ChatApplication:
         self.msg_entry.bind("<Return>",self._on_enter_press)
 
         #send button
-        send_button = Button(bottom_label, text="┗|・o・|┛", font="Helvetica 30",width=20, command=lambda: self._on_enter_press(None))
+        send_button = Button(bottom_label, text="┗|・o・|┛", font="Helvetica 30", bg="#ffc107", fg="#000000", relief="solid",width=10, height=2, command=lambda: self._on_enter_press(None))
         send_button.place(relx=0.77, rely=0.020, relheight=0.06, relwidth=0.22)
 
     def _on_enter_press(self,event):
