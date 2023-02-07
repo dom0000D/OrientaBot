@@ -44,11 +44,11 @@ class ChatApplication:
         self.window.eval('tk::PlaceWindow . center')
 
         #head Label
-        head_label = Label(self.window, bg="#000000", fg= TEXT_COLOR, text= "[∵┌]└[ ∵ ]┘[┐∵]┘ ORIENTABOT [∵┌]└[ ∵ ]┘[┐∵]┘", font="Helvetica 25", pady=20)
+        head_label = Label(self.window, bg="#000000", fg= TEXT_COLOR, text= "[∵┌]└[ ∵ ]┘[┐∵]┘ ᴏʀɪᴇɴᴛᴀʙᴏᴛ [∵┌]└[ ∵ ]┘[┐∵]┘", font="Helvetica 25", pady=20)
         head_label.place(relwidth=1)
 
         #text widget
-        self.text_widget = Text(self.window, width=40, height=2, bg="#f7ecda", font="Helvetica 18", padx=10,pady=10)  # 20 caratteri a liena
+        self.text_widget = Text(self.window, width=40, height=2, bg="#f7ecda", font="Helvetica 18", padx=10,pady=10)  # 40 caratteri a liena
         self.text_widget.place(relheight=0.745, relwidth=1, rely=0.08)
         self.text_widget.configure(cursor="trek", state=DISABLED)
 
@@ -74,7 +74,10 @@ class ChatApplication:
         self.msg_entry.bind("<Return>",self._on_enter_press)
 
         #send button
-        send_button = Button(bottom_label, text="┗|・o・|┛", font="Helvetica 30", bg="#ffc107", fg="#000000", relief="solid",width=10, height=2, command=lambda: self._on_enter_press(None))
+        button_image = PhotoImage(file="../../Desktop/TESI/v.png")
+        send_button = Button(bottom_label, bg="#ffc107", fg="#000000", relief="solid",width=10, height=2, command=lambda: self._on_enter_press(None))
+        send_button.config(image=button_image, compound="center")
+        send_button.image = button_image
         send_button.place(relx=0.77, rely=0.020, relheight=0.06, relwidth=0.22)
 
     def _on_enter_press(self,event):
@@ -89,11 +92,10 @@ class ChatApplication:
         self.text_widget.insert(END, msg1)
         self.text_widget.configure(state=DISABLED)
 
-        msg2 = f"{bot_name}: {get_response(msg)}\n\n"
+        msg2 = f"{bot_name}: {get_response(msg)}\n ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n"
         self.text_widget.configure(state= NORMAL)
         self.text_widget.insert(END, msg2)
         self.text_widget.configure(state=DISABLED)
-
         self.text_widget.see(END)
 
 if __name__ == "__main__":
