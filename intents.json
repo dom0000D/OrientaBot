@@ -31,13 +31,17 @@
 	 "patterns": ["qual é il tuo esame preferito?", "che esame ti piace", "qual é la tua materia preferita?"],
 	 "responses": ["Il mio esame preferito é... TUTTI", "Il mio esame preferito é Sistemi Operativi!", "Sono un robot, secondo te?", "Il mio esame preferito é Algoritmi e Strutture Dati!"]},
 
+	 {"tag": "mail",
+	 "patterns": ["Come contattare la segreteria?", "Qual é la mail della segreteria?", "come contatto la segreteria?", "qual é il numero di telefono della segreteria?"],
+	 "responses": ["Puoi contattare la segreteria all'indirizzo segreteriadidattica.scuolasis@uniparthenope.it oppure chiamare ai numeri +39 081 547 6737/6548/4199/4651/4684"]},
+
 	 {"tag": "segreteria",
 	 "patterns": ["A che ora apre la segreteria?", "la segreteria é aperta?", "quali sono gli orari della segreteria?", "a che ora posso andare in segreteria?"],
-	 "responses": ["La segreteria é aperta tutti i giorni dalle 09.00 alle 11.00", "La segreteria é aperta ogni giorno dalle 09.00 alle 11.00", "Puoi andare in segreteria tutti i giorni dalle 09.00 alle 11.00"]},
+	 "responses": ["La segreteria é aperta tutti i giorni dalle 09.00 alle 11.00. Puoi richiedere un ricevimento su Teams al codice rktnie5.", "La segreteria é aperta ogni giorno dalle 09.00 alle 11.00. Puoi usufruire dello sportello telematico Teams al codice rktnie5.", "Puoi andare in segreteria tutti i giorni dalle 09.00 alle 11.00 oppure recarti su Teams al codice rktnie5"]},
 
 	 {"tag": "sito",
 	 "patterns": ["Qual é il sito della scuola?", "Qual é il sito dell'ateneo?", "Qual é il sito?", "Qual é il sito dell'universitá?","Qual é il sito della Parthenope?"],
-	 "responses": ["Il sito dell'Universitá é https://www.uniparthenope.it. Qui puoi trovare tutto ció che cerchi."]},
+	 "responses": ["Il sito dell'Universitá é https://www.uniparthenope.it. Qui puoi trovare tutto ció che cerchi.\nVisita anche https://orienta.uniparthenope.it per info su Placement, lavoro e tante opportunitá."]},
 
 	 {"tag": "apertura",
 	 "patterns": ["Quando é aperta l'universitá?","a che ora chiude l'universitá?", "in che giorni posso andare in sede?", "quali sono i giorni per andare in universitá?","Quando é aperta la Parthenpope?"],
@@ -70,6 +74,19 @@
 	 {"tag": "uso",
 	 "patterns": ["A cosa servi?","cosa posso chiederti", "A che servi?", "Cosa mi puoi dire?","In cosa mi puoi aiutare?","cosa sai fare","che sai fare","che ti posso chiedere","cosa ti posso chidere"],
 	 "responses": ["Sono stato creato per poter aiutare gli studenti che cercano informazioni riguardo l'Ateneo, tasse, segreteria, lezioni, immatricolazioni e tanto altro. \nProva a chiedermi qualcosa e cercheró di esserti utile!"]},
+
+	 {"tag": "permesso",
+	 "patterns": ["Dove posso scaricare il modulo per il permesso al lavoro?","Modulo permesso lavoro per esame", "Sono uno studente lavoratore e ho bisogno del permesso lavorativo", "Dove scaricare modulo permesso lavoro"],
+	 "responses": ["Puoi trovare il modulo sul sito della Scuola, visita https://orienta.uniparthenope.it/placement/modulistica-studenti/. Puoi inoltre chiederlo direttamente in segreteria e farlo firmare dal Docente.","Visita il sito https://orienta.uniparthenope.it/placement/modulistica-studenti/ per scaricare tutti i moduli necessari"]},
+
+	 {"tag": "lavoro",
+	 "patterns": ["Quali sono le aziende convenzionate con la Parthenope?","Come faccio a trovare lavoro dopo la laurea?", "Come funziona l'Ufficio Placement?", "Ci sono opportunitá lavortive?","almalaurea"],
+	 "responses": ["Il servizio Placement dell’Università Parthenope offre ad enti ed aziende un supporto nelle attivitá di matching, recruiting e formazione al lavoro.\n Resta aggiornato sul sito https://orienta.uniparthenope.it/placement/aziende per nuovi incontri.\nTi consiglio inoltre di iscriverti ad Almalaurea per farti conoscere nel mondo del lavoro."]},
+
+	 {"tag": "cambioPercorso",
+	 "patterns": ["Voglio cambiare il mio percorso di studi","Come faccio a cambiare corso di studi", "Come cambio corso di studi?", "Come si cambia il percorso di studi?","cambiare percorso di studi"],
+	 "responses": ["Per cambiare il tuo Percorso di Studio basta scaricare il modulo al sito https://siegi.uniparthenope.it/wp-content/uploads/2021/03/CAMBIO-PERCORSO-DI-STUDI.pdf e consegnarlo in segreteria."]},
+
 
 	 {"tag": "sportello",
 	 "patterns": ["C'é uno sportello psicologico?","Vorrei un supporto psicologico", "Come accedo allo sportello psicologico?", "C'é il servizio di supporto psicologico?"],
