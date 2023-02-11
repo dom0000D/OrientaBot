@@ -25,7 +25,6 @@ mainloop()
 
 TEXT_COLOR = "#EAECEE"
 FONT_BOLD = "Helvetica 16 bold"
-BG_GRAY = "#ABB2B9"
 FONT = "Helvetica 14"
 class ChatApplication:
 
