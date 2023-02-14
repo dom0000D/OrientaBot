@@ -80,7 +80,7 @@
 	 "responses": ["Puoi trovare il modulo sul sito della Scuola, visita https://orienta.uniparthenope.it/placement/modulistica-studenti/. Puoi inoltre chiederlo direttamente in segreteria e farlo firmare dal Docente.","Visita il sito https://orienta.uniparthenope.it/placement/modulistica-studenti/ per scaricare tutti i moduli necessari"]},
 
 	 {"tag": "lavoro",
-	 "patterns": ["Quali sono le aziende convenzionate con la Parthenope?","Come faccio a trovare lavoro dopo la laurea?", "Come funziona l'Ufficio Placement?", "Ci sono opportunitá lavortive?","almalaurea"],
+	 "patterns": ["Quali sono le aziende convenzionate con la Parthenope?","cos'è l'ufficio placement?","come funziona l'ufficio placement?","Come faccio a trovare lavoro dopo la laurea?", "Come funziona l'Ufficio Placement?", "Ci sono opportunitá lavortive?","almalaurea","come trovo lavoro dopo l'università?"],
 	 "responses": ["Il servizio Placement dell’Università Parthenope offre ad enti ed aziende un supporto nelle attivitá di matching, recruiting e formazione al lavoro.\n Resta aggiornato sul sito https://orienta.uniparthenope.it/placement/aziende per nuovi incontri.\nTi consiglio inoltre di iscriverti ad Almalaurea per farti conoscere nel mondo del lavoro."]},
 
 	 {"tag": "cambioPercorso",
@@ -112,9 +112,33 @@
 	 "patterns": ["Come inizio il tirocinio?","hai info sul tirocinio?", "aiuto tirocinio", "Come si inizia il tirocinio?","A chi devo chiedere per il tirocinio?"],
 	 "responses": ["Per iniziare il tirocinio dovrai aver completato gli esami obbligatori, ad esempio se sei uno studente di Informatica dovrai aver completato Algoritmi e Strutture Dati,\n Sistemi Operativi, Programmazione III, Basi di Dati. Recati dal responsabile dei tirocini cercandolo sul sito e inviagli una mail di richiesta. Il responsabile per Informatica é il Prof. Antonio Maratea. Buon lavoro!"]},
 
+	 {"tag": "esse3",
+	 "patterns": ["Come prenoto gli esami?", "Come vedo gli appelli di esame?", "come prenotare un esame?","come faccio a prenotare un esame?","dove si prenotano gli esami","come posso vedere gli appelli?","dove vedo gli appelli?","come si prenota un esame?"],
+	 "responses": ["Per prenotare un esame accedi al tuo profilo personale Esse3 al sito https://uniparthenope.esse3.cineca.it -> Appelli Disponibili -> Prenota.\nPer vedere gli appelli disponibili per ogni esame basta visitare il sito https://uniparthenope.esse3.cineca.it/ListaAppelliOfferta.do."]},
+
+	 {"tag": "eLearning",
+	 "patterns": ["Come reperire materiale di studio?","dove trovo gli appunti?", "dove trovo le slide del Prof?", "come trovo le slide?","dove si trova il materiale di studio?","che cos'é elearning?","dove posso trovare degli appunti?","ho bisogno di materiale di studio, slide, appunti","dove sono le slide?"],
+	 "responses": ["Puoi trovare tutti gli appunti, slide, dispense, avvisi e simulazioni di esame sulla piattaforma E-Learning al sito https://elearning.uniparthenope.it.\nBuon lavoro :)","Puoi reperire materialo didattio dalla piattaforma E-Learning dell'Ateneo al sito https://elearning.uniparthenope.it.","Accedi al tuo profilo E-Learning al sito https://elearning.uniparthenope.it per tutto il materiale didattico."]},
+
+ 	 {"tag": "bar",
+	 "patterns": ["C'é un bar in sede?", "Voglio prendere un caffé", "é presente un bar?","dove si trova il bar?","bar Parthenope"],
+	 "responses": ["La maggior parte delle Sedi Parthenope ha un bar-ristorante all'interno.\nAlla sede del Centro Direzinale troverai un accogliente bar dove prenotare il tuo pranzo o prendere un caffè coi colleghi, lo trovi al piano terra.\nNon dimenticare di utilizzare la tua smart card per avere tanti sconti dedicati."]},
+
+	 {"tag": "coordinatore",
+	 "patterns": ["Chi é il coordinatore del corso di Informatica?", "Qual è il nome del coordinatore di Informatica?", "Come si chiama il coordinatore del corso di Informatica?"],
+	 "responses": ["Il coordinatore del Corso di Studi di Informatica è il Prof. Angelo Ciaramella.\nPuoi contattarlo tramite mail: angelo.ciaramella@uniparthenope.it."]},
+
+	 {"tag": "sitiInformatica",
+	 "patterns": ["Quali sono i siti web per il Corso di Informatica?", "Quali sono i siti per il CDS di Informatica?", "Dove posso trovare i siti per il corso di Informatica?"],
+	 "responses": ["I siti web per il Corso di Studi in Informatica sono:\n\n\t1. Sito web della Scuola: sisis.uniparthenope.it\n\n\t2. Sito web del Dipartimento: www.scienzeetecnologie.uniparthenope.it\n\n\t3. Sito web del Corso di Studio: informatica.uniparthenope.it\n"]},
+
 	 {"tag": "zonaStudio",
 	 "patterns": ["Posso studiare in sede?", "C'é una biblioteca dove studiare?", "Posso studiare in universitá?","Ci sono aulee studio?","biblioteca e aulee studio"],
 	 "responses": ["Puoi studiare in sede tutti i giorni feriali, ci sono molti spazi dedicati allo studio su ogni piano dell'edificio oppure puoi recarti in biblioteca.", "Puoi studiare in biblioteca, in aula studio o in uno dei banchi che si trovano sui piani dell'edificio!"]},
+
+	 {"tag": "manifestoInformatica",
+	 "patterns": ["Qual è il manifesto degli studi per Informatica?", "Quali sono gli insegnamenti di informatica?", "Manifesto degli studi Informatica","cos'è il manifesto degli studi?"],
+	 "responses": ["Il Manifesto degli studi del CdS Informatica è l’insieme delle attività formative che lo studente deve sostenere per il raggiungimento degli obiettivi del CDS.\nTali attività sono:\n\n\ta. sedici insegnamenti obbligatori svolti attraverso lezioni frontali e di laboratorio, per un totale di 144 CFU;\n\tb.  attività scelte liberamente dallo studente fra gli insegnamenti attivati presso l’Ateneo (12 CFU);\n\tc. attività di approfondimento della lingua inglese, con verifica finale (4 CFU);\n\td. ulteriori conoscenze (3 CFU)\n\te. attività di tirocinio aziendale o universitario (12 CFU)\n\tf. prova finale (5 CFU)"]},
 
 	 {"tag": "tolc",
 	 "patterns": ["C'é un tolc da superare?","Devo fare il test di ingresso?","Per essere ammesso devo superare una prova?","Tolc","Devo superare un test di ingresso?"],
