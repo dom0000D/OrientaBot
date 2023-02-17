@@ -1,7 +1,9 @@
 import numpy as np
 import nltk
 from nltk.stem.snowball import SnowballStemmer
+
 stemmer = SnowballStemmer("italian")
+
 
 def tokenize(sentence):
     """
@@ -35,9 +37,9 @@ def bag_of_words(tokenized_sentence, words):
     # inizializzo la bag a 0 per ogni parola
     bag = np.zeros(len(words), dtype=np.float32)
 
-    #se la parola esiste nella frase, inserisce un 1
+    # se la parola esiste nella frase, inserisce un 1
     for idx, w in enumerate(words):
-        if w in sentence_words: 
+        if w in sentence_words:
             bag[idx] = 1
 
     return bag
